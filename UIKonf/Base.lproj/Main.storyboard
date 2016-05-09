@@ -75,7 +75,7 @@
         <!--Events-->
         <scene sceneID="8Ob-R7-cRH">
             <objects>
-                <tableViewController id="G0d-V2-kRj" sceneMemberID="viewController">
+                <tableViewController id="G0d-V2-kRj" customClass="EventListViewController" customModule="UIKonf" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ewl-VM-8tz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
