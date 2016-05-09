@@ -97,7 +97,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="Vdo-Qq-Xsp"/>
                     <connections>
-                        <segue destination="g6C-DB-YoL" kind="show" identifier="showEventRegistration" action="showDetailViewController:sender:" id="Ka9-90-nr5"/>
+                        <segue destination="g6C-DB-YoL" kind="show" identifier="showEventRegistration" id="7mQ-Sf-5a8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZ1-Xl-tDX" userLabel="First Responder" sceneMemberID="firstResponder"/>

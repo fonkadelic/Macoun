@@ -31,4 +31,10 @@ class EventListViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: - UITableViewDelegate
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier(R.segue.eventListViewController.showEventRegistration, sender: self)
+    }
 }
