@@ -97,17 +97,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="Vdo-Qq-Xsp"/>
                     <connections>
-                        <segue destination="g6C-DB-YoL" kind="showDetail" id="Ka9-90-nr5"/>
+                        <segue destination="g6C-DB-YoL" kind="show" identifier="showEventRegistration" action="showDetailViewController:sender:" id="Ka9-90-nr5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZ1-Xl-tDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2187" y="912"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Registration-->
         <scene sceneID="GYY-bN-jbP">
             <objects>
-                <viewController id="g6C-DB-YoL" sceneMemberID="viewController">
+                <viewController title="Event Registration" id="g6C-DB-YoL" customClass="EventRegistrationViewController" customModule="UIKonf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f0K-4x-9ZT"/>
                         <viewControllerLayoutGuide type="bottom" id="91t-iL-5EZ"/>
@@ -116,7 +116,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-5c-Kdx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-5c-Kdx">
                                 <rect key="frame" x="231" y="289" width="139" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -124,8 +124,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ENM-5c-Kdx" firstAttribute="centerY" secondItem="sOF-fQ-uvS" secondAttribute="centerY" id="1Kp-YF-VVF"/>
+                            <constraint firstItem="ENM-5c-Kdx" firstAttribute="centerX" secondItem="sOF-fQ-uvS" secondAttribute="centerX" id="9Tr-ZB-Qzs"/>
+                        </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHp-Z8-eiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,6 +19,7 @@
 		5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB02D91CDF607900249A7A /* Speaker.swift */; };
 		5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */; };
 		5ABB02E21CDF825D00249A7A /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */; };
+		5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */; };
 		7847DC687566618BAA3EFF9A /* Pods_UIKonfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10D8B10C181FEA20BCA810 /* Pods_UIKonfTests.framework */; };
 		7AC566A48A661AC5A480A180 /* Pods_UIKonf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB05EA2D1699C9E05DB7949 /* Pods_UIKonf.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		5ABB02D91CDF607900249A7A /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
+		5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRegistrationViewController.swift; sourceTree = "<group>"; };
 		AB10D8B10C181FEA20BCA810 /* Pods_UIKonfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKonfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF13E69DF988FCC29E2DE180 /* Pods-UIKonf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonf/Pods-UIKonf.debug.xcconfig"; sourceTree = "<group>"; };
 		EDB05EA2D1699C9E05DB7949 /* Pods_UIKonf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKonf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				5ABB02D91CDF607900249A7A /* Speaker.swift */,
 				5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */,
 				5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */,
+				5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */,
 			);
 			path = UIKonf;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */,
 				5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */,
 				5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */,
+				5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */,
 				5ABB02D81CDF607000249A7A /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
