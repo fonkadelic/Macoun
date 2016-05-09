@@ -20,6 +20,7 @@
 		5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */; };
 		5ABB02E21CDF825D00249A7A /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */; };
 		5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */; };
+		5ABC7FB31CE0678D001DFDA6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC7FB21CE0678D001DFDA6 /* R.generated.swift */; };
 		7847DC687566618BAA3EFF9A /* Pods_UIKonfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10D8B10C181FEA20BCA810 /* Pods_UIKonfTests.framework */; };
 		7AC566A48A661AC5A480A180 /* Pods_UIKonf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB05EA2D1699C9E05DB7949 /* Pods_UIKonf.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
 		5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRegistrationViewController.swift; sourceTree = "<group>"; };
+		5ABC7FB21CE0678D001DFDA6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AB10D8B10C181FEA20BCA810 /* Pods_UIKonfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKonfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF13E69DF988FCC29E2DE180 /* Pods-UIKonf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonf/Pods-UIKonf.debug.xcconfig"; sourceTree = "<group>"; };
 		EDB05EA2D1699C9E05DB7949 /* Pods_UIKonf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKonf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 				5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */,
 				5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */,
 				5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */,
+				5ABC7FB21CE0678D001DFDA6 /* R.generated.swift */,
 			);
 			path = UIKonf;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildConfigurationList = 5AB72A3B1CDF5AD400C78B4E /* Build configuration list for PBXNativeTarget "UIKonf" */;
 			buildPhases = (
 				4A59FC965D07EDA23250D46A /* 📦 Check Pods Manifest.lock */,
+				5ABC7FAF1CE064EE001DFDA6 /* R.swift */,
 				5AB72A0F1CDF5AD400C78B4E /* Sources */,
 				5AB72A101CDF5AD400C78B4E /* Frameworks */,
 				5AB72A111CDF5AD400C78B4E /* Resources */,
@@ -324,6 +328,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5ABC7FAF1CE064EE001DFDA6 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 		BC9862FD94E775AECD7900E6 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +427,7 @@
 				5AB72A451CDF5B1100C78B4E /* SpeakerListViewController.swift in Sources */,
 				5ABB02D61CDF602200249A7A /* EventListViewController.swift in Sources */,
 				5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */,
+				5ABC7FB31CE0678D001DFDA6 /* R.generated.swift in Sources */,
 				5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */,
 				5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */,
 				5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */,
