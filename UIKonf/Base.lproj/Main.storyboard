@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -116,17 +117,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-5c-Kdx">
-                                <rect key="frame" x="231" y="289" width="139" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Vn-iAq" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="560" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ENM-5c-Kdx" firstAttribute="centerY" secondItem="sOF-fQ-uvS" secondAttribute="centerY" id="1Kp-YF-VVF"/>
-                            <constraint firstItem="ENM-5c-Kdx" firstAttribute="centerX" secondItem="sOF-fQ-uvS" secondAttribute="centerX" id="9Tr-ZB-Qzs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K4X-Vn-iAq" secondAttribute="trailing" id="2tn-4B-Vpm"/>
+                            <constraint firstItem="K4X-Vn-iAq" firstAttribute="leading" secondItem="sOF-fQ-uvS" secondAttribute="leadingMargin" id="X4F-7m-rV5"/>
+                            <constraint firstItem="K4X-Vn-iAq" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="lIW-Q3-Xqr"/>
                         </constraints>
                     </view>
                 </viewController>

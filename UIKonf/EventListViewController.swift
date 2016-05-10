@@ -26,6 +26,7 @@ class EventListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(String(BasicTableViewCell), forIndexPath: indexPath) as! BasicTableViewCell
+        cell.accessoryType = .DisclosureIndicator
         let event = events[indexPath.row]
         cell.configure(withTitle: event.name, detail: event.description, imageName: event.imageName)
         

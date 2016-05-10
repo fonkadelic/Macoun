@@ -9,21 +9,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="332" height="257"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
-                    <rect key="frame" x="83" y="8" width="166" height="195"/>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
+                    <rect key="frame" x="83" y="8" width="133" height="170"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3">
-                            <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3">
+                            <rect key="frame" x="0.0" y="0.0" width="133" height="133"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="glg-kO-8U3" secondAttribute="height" multiplier="1:1" id="w9a-X0-t0b"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-p8-IuI">
-                            <rect key="frame" x="0.0" y="174" width="166" height="21"/>
+                            <rect key="frame" x="0.0" y="149" width="133" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -33,14 +33,23 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lS1-VE-kxi" secondAttribute="trailing" constant="8" id="53t-k4-zSO"/>
                 <constraint firstItem="lS1-VE-kxi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8gq-al-tlt"/>
-                <constraint firstItem="glg-kO-8U3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="9Ol-5J-jaA"/>
+                <constraint firstItem="glg-kO-8U3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="9Ol-5J-jaA"/>
                 <constraint firstItem="lS1-VE-kxi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="FSX-ag-uyK"/>
+                <constraint firstItem="lS1-VE-kxi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Hck-sa-8UC"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lS1-VE-kxi" secondAttribute="bottom" constant="8" id="cDF-Aj-iDI"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pictureView" destination="glg-kO-8U3" id="SRn-Rk-dhK"/>
+                <outlet property="titleLabel" destination="Pt4-p8-IuI" id="2j0-tg-kgk"/>
+            </connections>
             <point key="canvasLocation" x="293" y="221.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="UIKonf-Logo" width="142" height="142"/>
+    </resources>
 </document>
