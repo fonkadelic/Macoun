@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A49C001CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
+		52A49C011CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
+		52A49C021CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
 		5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */; };
 		5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1A1CDF5AD400C78B4E /* Main.storyboard */; };
 		5AB72A1E1CDF5AD400C78B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */; };
@@ -46,6 +49,7 @@
 		1732E55FB90E365DE00D8843 /* Pods-UIKonf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonf.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonf/Pods-UIKonf.release.xcconfig"; sourceTree = "<group>"; };
 		43D99672E989565FEED5062F /* Pods-UIKonfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonfTests/Pods-UIKonfTests.release.xcconfig"; sourceTree = "<group>"; };
 		4A00D5C622C293C839D1B593 /* Pods-UIKonfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonfTests/Pods-UIKonfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52A49BFF1CE1AD540002B2C4 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		5AB72A131CDF5AD400C78B4E /* UIKonf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKonf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB72A1B1CDF5AD400C78B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */,
 				5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */,
 				5ABC7FB21CE0678D001DFDA6 /* R.generated.swift */,
+				52A49BFF1CE1AD540002B2C4 /* ImageView.swift */,
 			);
 			path = UIKonf;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				5ABC7FB31CE0678D001DFDA6 /* R.generated.swift in Sources */,
 				5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */,
 				5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */,
+				52A49C001CE1AD540002B2C4 /* ImageView.swift in Sources */,
 				5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */,
 				5ABB02D81CDF607000249A7A /* Event.swift in Sources */,
 			);
@@ -439,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A49C011CE1AD540002B2C4 /* ImageView.swift in Sources */,
 				5AB72A2C1CDF5AD400C78B4E /* UIKonfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A49C021CE1AD540002B2C4 /* ImageView.swift in Sources */,
 				5AB72A371CDF5AD400C78B4E /* UIKonfUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
