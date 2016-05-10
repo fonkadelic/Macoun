@@ -8,9 +8,13 @@
 import UIKit
 
 class EventRegistrationViewController: UIViewController {
+    
+    var event: Event!
+    @IBOutlet var headerView: HeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        headerView.configure(withTitle: event.name, imageName: event.imageName)
     }
 }

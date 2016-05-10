@@ -38,4 +38,15 @@ class EventListViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier(R.segue.eventListViewController.showEventRegistration, sender: self)
     }
+    
+    // MARK: -
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        if let segueInfo = R.segue.eventListViewController.showEventRegistration(segue: segue),
+           let selectedIndexPath = tableView.indexPathForSelectedRow {
+            
+            segueInfo.destinationViewController.event = events[selectedIndexPath.row]
+        }
+    }
 }

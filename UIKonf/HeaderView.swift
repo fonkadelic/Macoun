@@ -52,4 +52,8 @@ class HeaderView: UIView, NibLoadable {
         
         return loadReferenceFromNib()
     }
+    
+    func configure(withTitle title: String, imageName: String) {
+        titleLabel.text = title
+    }
 }

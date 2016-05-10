@@ -129,6 +129,9 @@
                             <constraint firstItem="K4X-Vn-iAq" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="lIW-Q3-Xqr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="K4X-Vn-iAq" id="k16-KL-TaS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHp-Z8-eiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
