@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A6117BD1CE0EC8400A52AAA /* UIKonf.clr in Resources */ = {isa = PBXBuildFile; fileRef = 5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */; };
+		5A6117BF1CE0ED5E00A52AAA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */; };
+		5A6117C11CE0ED7B00A52AAA /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */; };
 		5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */; };
 		5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1A1CDF5AD400C78B4E /* Main.storyboard */; };
 		5AB72A1E1CDF5AD400C78B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		43D99672E989565FEED5062F /* Pods-UIKonfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonfTests/Pods-UIKonfTests.release.xcconfig"; sourceTree = "<group>"; };
 		4A00D5C622C293C839D1B593 /* Pods-UIKonfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonfTests/Pods-UIKonfTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = UIKonf.clr; sourceTree = "<group>"; };
+		5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		5AB72A131CDF5AD400C78B4E /* UIKonf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKonf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB72A1B1CDF5AD400C78B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */,
 				5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */,
 				5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */,
+				5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */,
+				5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */,
 				5ABC7FB21CE0678D001DFDA6 /* R.generated.swift */,
 				5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */,
 			);
@@ -295,6 +301,7 @@
 				5ABB02E21CDF825D00249A7A /* BasicTableViewCell.xib in Resources */,
 				5AB72A211CDF5AD400C78B4E /* LaunchScreen.storyboard in Resources */,
 				5A6117BD1CE0EC8400A52AAA /* UIKonf.clr in Resources */,
+				5A6117C11CE0ED7B00A52AAA /* HeaderView.xib in Resources */,
 				5AB72A1E1CDF5AD400C78B4E /* Assets.xcassets in Resources */,
 				5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */,
 			);
@@ -429,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB72A451CDF5B1100C78B4E /* SpeakerListViewController.swift in Sources */,
+				5A6117BF1CE0ED5E00A52AAA /* HeaderView.swift in Sources */,
 				5ABB02D61CDF602200249A7A /* EventListViewController.swift in Sources */,
 				5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */,
 				5ABC7FB31CE0678D001DFDA6 /* R.generated.swift in Sources */,
