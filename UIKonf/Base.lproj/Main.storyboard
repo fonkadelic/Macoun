@@ -117,16 +117,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Vn-iAq" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
-                                <rect key="frame" x="20" y="64" width="560" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-nT-Cw6">
+                                <rect key="frame" x="20" y="64" width="560" height="167"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Vn-iAq" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lorem Ipsum dolor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chi-I4-Un5">
+                                        <rect key="frame" x="0.0" y="108" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-lh-fNh">
+                                        <rect key="frame" x="0.0" y="137" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="K4X-Vn-iAq" secondAttribute="trailing" id="2tn-4B-Vpm"/>
-                            <constraint firstItem="K4X-Vn-iAq" firstAttribute="leading" secondItem="sOF-fQ-uvS" secondAttribute="leadingMargin" id="X4F-7m-rV5"/>
-                            <constraint firstItem="K4X-Vn-iAq" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="lIW-Q3-Xqr"/>
+                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="leading" secondItem="sOF-fQ-uvS" secondAttribute="leadingMargin" id="0YD-BT-z9W"/>
+                            <constraint firstItem="91t-iL-5EZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TRg-nT-Cw6" secondAttribute="bottom" constant="8" id="4TR-lt-oi3"/>
+                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="Gjq-9w-OpS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TRg-nT-Cw6" secondAttribute="trailing" id="fa0-xZ-eOq"/>
                         </constraints>
                     </view>
                     <connections>
