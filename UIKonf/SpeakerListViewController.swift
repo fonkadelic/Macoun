@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IBAnimatable
 
 class SpeakerListViewController: UITableViewController {
     
@@ -31,5 +32,13 @@ class SpeakerListViewController: UITableViewController {
         cell.configure(withTitle: speaker.name, detail: speaker.shortBio, imageName: speaker.imageName)
         
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if let animatableCell = cell as? AnimatableTableViewCell {
+            animatableCell.animate()
+        }
     }
 }

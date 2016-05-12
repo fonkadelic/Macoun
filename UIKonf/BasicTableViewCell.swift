@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import IBAnimatable
 
-class BasicTableViewCell: UITableViewCell {
+class BasicTableViewCell: AnimatableTableViewCell {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
@@ -18,4 +19,6 @@ class BasicTableViewCell: UITableViewCell {
         descriptionLabel.text = detail
         pictureView.image = UIImage(named: imageName)
     }
+    
+    
 }

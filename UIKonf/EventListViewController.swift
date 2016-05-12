@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IBAnimatable
 
 class EventListViewController: UITableViewController {
     
@@ -37,6 +38,12 @@ class EventListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier(R.segue.eventListViewController.showEventRegistration, sender: self)
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if let animatableCell = cell as? AnimatableTableViewCell {
+            animatableCell.animate()
+        }
     }
     
     // MARK: -
