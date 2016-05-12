@@ -13,16 +13,26 @@
             <rect key="frame" x="0.0" y="0.0" width="238" height="264"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
                     <rect key="frame" x="11" y="8" width="95" height="132"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UIKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3" customClass="AnimatableImageView" customModule="IBAnimatable">
                             <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="glg-kO-8U3" secondAttribute="height" multiplier="1:1" id="w9a-X0-t0b"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="maskType" value="Circle"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="SqueezeInDown"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                    <real key="value" value="0.80000000000000004"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-p8-IuI">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-p8-IuI">
                             <rect key="frame" x="30" y="111" width="37" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
