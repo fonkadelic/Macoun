@@ -105,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="2187" y="912"/>
         </scene>
-        <!--Event Registration-->
+        <!--Owner-->
         <scene sceneID="GYY-bN-jbP">
             <objects>
                 <viewController title="Event Registration" id="g6C-DB-YoL" customClass="EventRegistrationViewController" customModule="UIKonf" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-nT-Cw6">
-                                <rect key="frame" x="20" y="64" width="560" height="167"/>
+                                <rect key="frame" x="20" y="64" width="560" height="205"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Vn-iAq" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
@@ -135,6 +135,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-Qt-OKS">
+                                        <rect key="frame" x="0.0" y="175" width="560" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -151,6 +155,15 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHp-Z8-eiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="31q-Ou-bur" customClass="KWETextValidationBehaviour">
+                    <connections>
+                        <outlet property="owner" destination="g6C-DB-YoL" id="Zd6-FZ-aZP"/>
+                        <outlet property="textField" destination="8Wm-lh-fNh" id="fo7-hN-zcZ"/>
+                        <outletCollection property="controls" destination="jlK-Qt-OKS" id="ie8-1h-hga"/>
+                        <outletCollection property="rules" destination="pSQ-nu-Iel" id="Q81-R0-O15"/>
+                    </connections>
+                </customObject>
+                <customObject id="pSQ-nu-Iel" customClass="KWEEmailRule"/>
             </objects>
             <point key="canvasLocation" x="2880" y="912"/>
         </scene>
