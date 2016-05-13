@@ -117,37 +117,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-nT-Cw6">
-                                <rect key="frame" x="20" y="64" width="560" height="205"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-nT-Cw6">
+                                <rect key="frame" x="20" y="64" width="560" height="271"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Vn-iAq" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lorem Ipsum dolor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chi-I4-Un5">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chi-I4-Un5">
                                         <rect key="frame" x="0.0" y="108" width="560" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="yxl-vg-d6b"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-lh-fNh">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-lh-fNh">
                                         <rect key="frame" x="0.0" y="137" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="dzp-Gn-D18"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV7-5C-Zyh">
+                                        <rect key="frame" x="0.0" y="175" width="560" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="WbK-jr-g7t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="po1-Dn-zNd">
+                                        <rect key="frame" x="0.0" y="204" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pOo-rp-zmb"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-Qt-OKS">
-                                        <rect key="frame" x="0.0" y="175" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="242" width="560" height="29"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="chi-I4-Un5" firstAttribute="top" secondItem="TRg-nT-Cw6" secondAttribute="top" constant="108" id="5mi-1M-8eP"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="leading" secondItem="sOF-fQ-uvS" secondAttribute="leadingMargin" id="0YD-BT-z9W"/>
-                            <constraint firstItem="91t-iL-5EZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TRg-nT-Cw6" secondAttribute="bottom" constant="8" id="4TR-lt-oi3"/>
-                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="Gjq-9w-OpS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TRg-nT-Cw6" secondAttribute="trailing" id="fa0-xZ-eOq"/>
+                            <constraint firstItem="91t-iL-5EZ" firstAttribute="top" secondItem="TRg-nT-Cw6" secondAttribute="bottom" constant="216" id="CqJ-c6-HgF"/>
+                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="Uok-Z0-HRh"/>
+                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="trailing" secondItem="sOF-fQ-uvS" secondAttribute="trailingMargin" id="aOa-bN-sVh"/>
+                            <constraint firstItem="TRg-nT-Cw6" firstAttribute="leading" secondItem="sOF-fQ-uvS" secondAttribute="leadingMargin" id="d8N-Oc-ecN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -158,12 +184,36 @@
                 <customObject id="31q-Ou-bur" customClass="KWETextValidationBehaviour">
                     <connections>
                         <outlet property="owner" destination="g6C-DB-YoL" id="Zd6-FZ-aZP"/>
-                        <outlet property="textField" destination="8Wm-lh-fNh" id="fo7-hN-zcZ"/>
-                        <outletCollection property="controls" destination="jlK-Qt-OKS" id="ie8-1h-hga"/>
+                        <outlet property="textField" destination="po1-Dn-zNd" id="hCL-cH-teM"/>
                         <outletCollection property="rules" destination="pSQ-nu-Iel" id="Q81-R0-O15"/>
                     </connections>
                 </customObject>
                 <customObject id="pSQ-nu-Iel" customClass="KWEEmailRule"/>
+                <customObject id="WJE-he-Vwr" customClass="KWETextValidationBehaviour">
+                    <connections>
+                        <outlet property="owner" destination="g6C-DB-YoL" id="E6A-aA-bwE"/>
+                        <outlet property="textField" destination="8Wm-lh-fNh" id="leB-sM-PhX"/>
+                        <outletCollection property="rules" destination="mVZ-kf-Hrq" id="Z8r-nY-O13"/>
+                    </connections>
+                </customObject>
+                <customObject id="mVZ-kf-Hrq" customClass="KWELengthRule">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minCharacterCount">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxCharacterCount">
+                            <integer key="value" value="200"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+                <customObject id="j5P-Qv-5Ow" customClass="KWEFormBehaviour">
+                    <connections>
+                        <outlet property="owner" destination="g6C-DB-YoL" id="Qfx-xb-vpg"/>
+                        <outletCollection property="validations" destination="31q-Ou-bur" id="W9B-Wp-S76"/>
+                        <outletCollection property="validations" destination="WJE-he-Vwr" id="55X-gy-S0g"/>
+                        <outletCollection property="controls" destination="jlK-Qt-OKS" id="qbg-EQ-koa"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="2880" y="912"/>
         </scene>
