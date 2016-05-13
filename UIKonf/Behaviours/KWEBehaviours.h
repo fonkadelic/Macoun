@@ -7,3 +7,5 @@
 
 #import "KWEBehaviour.h"
 #import "KWETextValidationBehaviour.h"
+#import "KWEFormBehaviour.h"
+#import "KWEKeyboardBehaviour.h"
