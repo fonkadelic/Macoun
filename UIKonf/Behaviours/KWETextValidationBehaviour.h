@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, nullable) IBOutlet UIBarButtonItem *barButton;
 @property (nonatomic, strong, nullable) IBOutletCollection(UIControl) NSArray *controls;
 
+@property (nonatomic, strong, nullable) IBInspectable UIColor *invalidTextColor;
+
 @end
 
 

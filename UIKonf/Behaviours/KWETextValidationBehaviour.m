@@ -7,6 +7,10 @@
 
 #import "KWETextValidationBehaviour.h"
 
+@interface KWETextValidationBehaviour ()
+@property (nonatomic, strong) UIColor *validTextColor;
+@end
+
 @implementation KWETextValidationBehaviour
 
 #pragma mark - Class Constructor
@@ -26,6 +30,8 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
+    self.validTextColor = self.textField.textColor;
     
     [self updateValidation];
 }
@@ -48,6 +54,10 @@
     self.barButton.enabled = isValid;
     for (UIControl *control in self.controls) {
         control.enabled = isValid;
+    }
+    
+    if (self.invalidTextColor) {
+        self.textField.textColor = isValid ? self.validTextColor : self.invalidTextColor;
     }
     
     [self sendActionsForControlEvents:UIControlEventValueChanged];

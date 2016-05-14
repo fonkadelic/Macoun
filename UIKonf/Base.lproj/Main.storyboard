@@ -169,14 +169,6 @@
                                                         <state key="normal" title="Register"/>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="chi-I4-Un5" firstAttribute="top" secondItem="TRg-nT-Cw6" secondAttribute="top" constant="108" id="5mi-1M-8eP"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="5mi-1M-8eP"/>
-                                                    </mask>
-                                                </variation>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -216,6 +208,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHp-Z8-eiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="31q-Ou-bur" customClass="KWETextValidationBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="owner" destination="g6C-DB-YoL" id="Zd6-FZ-aZP"/>
                         <outlet property="textField" destination="po1-Dn-zNd" id="hCL-cH-teM"/>
@@ -224,6 +221,11 @@
                 </customObject>
                 <customObject id="pSQ-nu-Iel" customClass="KWEEmailRule"/>
                 <customObject id="WJE-he-Vwr" customClass="KWETextValidationBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="owner" destination="g6C-DB-YoL" id="E6A-aA-bwE"/>
                         <outlet property="textField" destination="8Wm-lh-fNh" id="leB-sM-PhX"/>
