@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import Rswift
 
 public struct Speaker {
     let id: Int
     let name: String
     let shortBio: String
-    let imageName: String
+    let imageResource: ImageResource
 }
 
 extension Speaker {
@@ -22,91 +23,91 @@ extension Speaker {
             id: 1,
             name: "Andreas Schranzhofer",
             shortBio: "Andreas is CTO at Scalable Capital.",
-            imageName: "andreas"
+            imageResource: R.image.andreas
         ),
         Speaker(
             id: 2,
             name: "Ashley Nelson-Hornstein",
             shortBio: "Ashley is an iOS engineer, speaker, and avid blogger.",
-            imageName: "ashley"
+            imageResource: R.image.ashley
         ),
         Speaker(
             id: 3,
             name: "Charles Perry",
             shortBio: "Charles Perry is the owner of Metakite Software and co-host of Release Notes podcast.",
-            imageName: "charles"
+            imageResource: R.image.charles
         ),
         Speaker(
             id: 4,
             name: "Clay Smith",
             shortBio: "Clay Smith is a Developer Advocate at New Relic in San Francisco.",
-            imageName: "clay"
+            imageResource: R.image.clay
         ),
         Speaker(
             id: 5,
             name: "Daniel H Steinberg",
             shortBio: "Daniel presents Cocoa and Swift training and consults through Dim Sum Thinking",
-            imageName: "daniel"
+            imageResource: R.image.daniel
         ),
         Speaker(
             id: 6,
             name: "Dasmer Singh",
             shortBio: "Speaker & engineer-strategist, passionate about iOS, currently at Venmo.",
-            imageName: "dasmer"
+            imageResource: R.image.dasmer
         ),
         Speaker(
             id: 7,
             name: "Ellen Shapiro",
             shortBio: "Ellen is the Lead Mobile Developer for SpotHero",
-            imageName: "ellen"
+            imageResource: R.image.ellen
         ),
         Speaker(
             id: 8,
             name: "Jaimee Newberry",
             shortBio: "Jaimee is a professional experimenter, UX coach, writer and speaker",
-            imageName: "jaimee"
+            imageResource: R.image.jaimee
         ),
         Speaker(
             id: 9,
             name: "Jeff Watkins",
             shortBio: "Jeff runs a non-profit supporting organisations to increase diversity in the technology industry.",
-            imageName: "jeff"
+            imageResource: R.image.jeff
         ),
         Speaker(
             id: 10,
             name: "Bernhard Loibl & Mathias Nagler",
             shortBio: "iOS developers at the mobile app agency Kupferwerk.",
-            imageName: "bernhard-mathias"
+            imageResource: R.image.bernhardMathias
         ),
         Speaker(
             id: 11,
             name: "Laura Savino",
             shortBio: "Laura is an iOS developer with a passion for human languages, teaching & song.",
-            imageName: "laura"
+            imageResource: R.image.laura
         ),
         Speaker(
             id: 12,
             name: "Michael May",
             shortBio: "iOS developer since the app store launch. Fussy about coffee & easily upset by bad user interfaces.",
-            imageName: "michael"
+            imageResource: R.image.michael
         ),
         Speaker(
             id: 13,
             name: "Shuichi Tsutsumi",
             shortBio: "iOS Freelancer. Author of BTLE Book, iOS Sampler series",
-            imageName: "shuichi"
+            imageResource: R.image.shuichi
         ),
         Speaker(
             id: 14,
             name: "Stephen Barnes",
             shortBio: "iOS Developer at Fitbit, coffee lover & digital artist",
-            imageName: "stephen"
+            imageResource: R.image.stephen
         ),
         Speaker(
             id: 15,
             name: "Steve Scott",
             shortBio: "Scotty is a developer, podcaster and conference organiser with a passion for community.",
-            imageName: "steve"
+            imageResource: R.image.steve
         ),
     ]
 }

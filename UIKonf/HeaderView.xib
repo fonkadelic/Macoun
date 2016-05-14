@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,12 +12,13 @@
             <rect key="frame" x="0.0" y="0.0" width="238" height="264"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
-                    <rect key="frame" x="11" y="8" width="95" height="132"/>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
+                    <rect key="frame" x="11" y="8" width="222" height="187"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3" customClass="AnimatableImageView" customModule="IBAnimatable">
-                            <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UIKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3" customClass="AnimatableImageView" customModule="IBAnimatable">
+                            <rect key="frame" x="36" y="0.0" width="150" height="150"/>
                             <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Xke-2Z-9Oz"/>
                                 <constraint firstAttribute="width" secondItem="glg-kO-8U3" secondAttribute="height" multiplier="1:1" id="w9a-X0-t0b"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
@@ -32,8 +32,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-p8-IuI">
-                            <rect key="frame" x="30" y="111" width="37" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-p8-IuI">
+                            <rect key="frame" x="93" y="166" width="37" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -43,21 +43,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lS1-VE-kxi" secondAttribute="trailing" constant="8" id="53t-k4-zSO"/>
+                <constraint firstAttribute="trailing" secondItem="lS1-VE-kxi" secondAttribute="trailing" constant="8" id="53t-k4-zSO"/>
                 <constraint firstItem="lS1-VE-kxi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8gq-al-tlt"/>
-                <constraint firstItem="glg-kO-8U3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="9Ol-5J-jaA"/>
                 <constraint firstItem="lS1-VE-kxi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="FSX-ag-uyK"/>
                 <constraint firstItem="lS1-VE-kxi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Hck-sa-8UC"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lS1-VE-kxi" secondAttribute="bottom" priority="900" constant="8" id="cDF-Aj-iDI"/>
-                <constraint firstItem="lS1-VE-kxi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pBi-v5-AUz"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="pBi-v5-AUz"/>
-                </mask>
-            </variation>
             <connections>
                 <outlet property="pictureView" destination="glg-kO-8U3" id="SRn-Rk-dhK"/>
                 <outlet property="titleLabel" destination="Pt4-p8-IuI" id="2j0-tg-kgk"/>

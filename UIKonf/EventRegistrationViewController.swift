@@ -15,6 +15,6 @@ class EventRegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        headerView.configure(withTitle: event.name, imageName: event.imageName)
+        headerView.configure(withTitle: event.name, imageResource: event.imageResource)
     }
 }

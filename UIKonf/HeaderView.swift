@@ -7,6 +7,7 @@
 
 import UIKit
 import Reusable
+import Rswift
 
 public extension NibLoadable where Self: UIView {
     
@@ -53,7 +54,8 @@ class HeaderView: UIView, NibLoadable {
         return loadReferenceFromNib()
     }
     
-    func configure(withTitle title: String, imageName: String) {
+    func configure(withTitle title: String, imageResource: ImageResource) {
         titleLabel.text = title
+        pictureView.image = UIImage(resource: imageResource)
     }
 }

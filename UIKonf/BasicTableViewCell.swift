@@ -7,6 +7,7 @@
 
 import UIKit
 import IBAnimatable
+import Rswift
 
 class BasicTableViewCell: AnimatableTableViewCell {
 
@@ -14,11 +15,9 @@ class BasicTableViewCell: AnimatableTableViewCell {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var pictureView: UIImageView!
     
-    func configure(withTitle title: String, detail: String, imageName: String) {
+    func configure(withTitle title: String, detail: String, imageResource: ImageResource) {
         titleLabel.text = title
         descriptionLabel.text = detail
-        pictureView.image = UIImage(named: imageName)
+        pictureView.image = UIImage(resource: imageResource)
     }
-    
-    
 }

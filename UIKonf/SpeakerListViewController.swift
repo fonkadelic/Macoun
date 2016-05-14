@@ -29,7 +29,7 @@ class SpeakerListViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(String(BasicTableViewCell), forIndexPath: indexPath) as! BasicTableViewCell
         let speaker = speakers[indexPath.row]
-        cell.configure(withTitle: speaker.name, detail: speaker.shortBio, imageName: speaker.imageName)
+        cell.configure(withTitle: speaker.name, detail: speaker.shortBio, imageResource: speaker.imageResource)
         
         return cell
     }

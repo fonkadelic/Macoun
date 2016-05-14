@@ -29,7 +29,7 @@ class EventListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(String(BasicTableViewCell), forIndexPath: indexPath) as! BasicTableViewCell
         cell.accessoryType = .DisclosureIndicator
         let event = events[indexPath.row]
-        cell.configure(withTitle: event.name, detail: event.description, imageName: event.imageName)
+        cell.configure(withTitle: event.name, detail: event.description, imageResource: event.imageResource)
         
         return cell
     }

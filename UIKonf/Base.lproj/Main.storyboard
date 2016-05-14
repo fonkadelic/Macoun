@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIm-PH-Lr4" id="CiP-uS-89C">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -86,7 +86,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Keh-c7-Maz" id="bdC-o7-0IV">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -121,17 +121,17 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sa9-hD-eWs" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="288"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="288"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-nT-Cw6">
-                                                <rect key="frame" x="8" y="8" width="57" height="272"/>
+                                                <rect key="frame" x="8" y="8" width="584" height="272"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Vn-iAq" customClass="HeaderView" customModule="UIKonf" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="57" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="584" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chi-I4-Un5">
-                                                        <rect key="frame" x="0.0" y="108" width="57" height="21"/>
+                                                        <rect key="frame" x="0.0" y="108" width="584" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="yxl-vg-d6b"/>
                                                         </constraints>
@@ -140,7 +140,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Wm-lh-fNh">
-                                                        <rect key="frame" x="0.0" y="137" width="57" height="30"/>
+                                                        <rect key="frame" x="0.0" y="137" width="584" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="dzp-Gn-D18"/>
                                                         </constraints>
@@ -148,7 +148,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV7-5C-Zyh">
-                                                        <rect key="frame" x="0.0" y="175" width="57" height="21"/>
+                                                        <rect key="frame" x="0.0" y="175" width="584" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="WbK-jr-g7t"/>
                                                         </constraints>
@@ -157,7 +157,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="po1-Dn-zNd">
-                                                        <rect key="frame" x="0.0" y="204" width="57" height="30"/>
+                                                        <rect key="frame" x="0.0" y="204" width="584" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="pOo-rp-zmb"/>
                                                         </constraints>
@@ -165,7 +165,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-Qt-OKS">
-                                                        <rect key="frame" x="0.0" y="242" width="57" height="30"/>
+                                                        <rect key="frame" x="0.0" y="242" width="584" height="30"/>
                                                         <state key="normal" title="Register"/>
                                                     </button>
                                                 </subviews>
@@ -195,6 +195,7 @@
                             <constraint firstAttribute="trailing" secondItem="eDP-Jo-5JS" secondAttribute="trailing" id="PvM-j3-2z0"/>
                             <constraint firstItem="91t-iL-5EZ" firstAttribute="top" secondItem="eDP-Jo-5JS" secondAttribute="bottom" id="SJv-Qg-L1D"/>
                             <constraint firstItem="eDP-Jo-5JS" firstAttribute="top" secondItem="f0K-4x-9ZT" secondAttribute="bottom" id="vks-Q9-lZV"/>
+                            <constraint firstItem="Sa9-hD-eWs" firstAttribute="width" secondItem="sOF-fQ-uvS" secondAttribute="width" id="yke-Xa-9dY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
