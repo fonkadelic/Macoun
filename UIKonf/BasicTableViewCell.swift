@@ -8,8 +8,9 @@
 import UIKit
 import IBAnimatable
 import Rswift
+import Reusable
 
-class BasicTableViewCell: AnimatableTableViewCell {
+class BasicTableViewCell: AnimatableTableViewCell, NibReusable {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!

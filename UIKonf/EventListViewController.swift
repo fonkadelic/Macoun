@@ -7,6 +7,7 @@
 
 import UIKit
 import IBAnimatable
+import Reusable
 
 class EventListViewController: UITableViewController {
     
@@ -15,7 +16,7 @@ class EventListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.registerNib(UINib(nibName: String(BasicTableViewCell), bundle: nil), forCellReuseIdentifier:String(BasicTableViewCell))
+        tableView.registerReusableCell(BasicTableViewCell)
         tableView.rowHeight = 100
     }
     
@@ -26,7 +27,7 @@ class EventListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(String(BasicTableViewCell), forIndexPath: indexPath) as! BasicTableViewCell
+        let cell = tableView.dequeueReusableCell(indexPath: indexPath) as BasicTableViewCell
         cell.accessoryType = .DisclosureIndicator
         let event = events[indexPath.row]
         cell.configure(withTitle: event.name, detail: event.description, imageResource: event.imageResource)

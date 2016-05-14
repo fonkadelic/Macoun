@@ -7,6 +7,7 @@
 
 import UIKit
 import IBAnimatable
+import Reusable
 
 class SpeakerListViewController: UITableViewController {
     
@@ -15,7 +16,7 @@ class SpeakerListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.registerNib(UINib(nibName: String(BasicTableViewCell), bundle: nil), forCellReuseIdentifier:String(BasicTableViewCell))
+        tableView.registerReusableCell(BasicTableViewCell)
         tableView.rowHeight = 100
     }
     
@@ -27,7 +28,7 @@ class SpeakerListViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(String(BasicTableViewCell), forIndexPath: indexPath) as! BasicTableViewCell
+        let cell = tableView.dequeueReusableCell(indexPath: indexPath) as BasicTableViewCell
         let speaker = speakers[indexPath.row]
         cell.configure(withTitle: speaker.name, detail: speaker.shortBio, imageResource: speaker.imageResource)
         
