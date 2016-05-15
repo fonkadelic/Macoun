@@ -16,25 +16,25 @@ public extension NibLoadable where Self: UIView {
         view.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
         view.backgroundColor = backgroundColor
         
-        for constraint in constraints {
-            var firstItem = constraint.firstItem
-            if firstItem === self {
-                firstItem = view
-            }
+        for placeholderConstraint in constraints {
+            let firstItem = (placeholderConstraint.firstItem === self) ? view : placeholderConstraint.firstItem
+            let secondItem = (placeholderConstraint.secondItem === self) ? view : placeholderConstraint.secondItem
             
-            var secondItem = constraint.secondItem
-            if secondItem === self {
-                secondItem = view
-            }
-            
-            view.addConstraint(NSLayoutConstraint(
+            let constraint = NSLayoutConstraint(
                 item: firstItem,
-                attribute: constraint.firstAttribute,
-                relatedBy: constraint.relation,
+                attribute: placeholderConstraint.firstAttribute,
+                relatedBy: placeholderConstraint.relation,
                 toItem: secondItem,
-                attribute: constraint.secondAttribute,
-                multiplier: constraint.multiplier,
-                constant: constraint.constant))
+                attribute: placeholderConstraint.secondAttribute,
+                multiplier: placeholderConstraint.multiplier,
+                constant: placeholderConstraint.constant)
+            
+            constraint.identifier = placeholderConstraint.identifier
+            constraint.shouldBeArchived = placeholderConstraint.shouldBeArchived
+            constraint.priority = placeholderConstraint.priority
+            constraint.active = placeholderConstraint.active
+            
+            view.addConstraint(constraint)
         }
         
         return view
