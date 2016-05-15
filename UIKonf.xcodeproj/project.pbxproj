@@ -24,6 +24,7 @@
 		5A9943A41CE61871003C3879 /* KWEFormBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943A31CE61871003C3879 /* KWEFormBehaviour.m */; };
 		5A9943A71CE67A25003C3879 /* KWEKeyboardBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943A61CE67A25003C3879 /* KWEKeyboardBehaviour.m */; };
 		5A9943AA1CE67A5E003C3879 /* KWEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943A91CE67A5E003C3879 /* KWEAdditions.m */; };
+		5A9943AC1CE88A3B003C3879 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */; };
 		5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */; };
 		5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1A1CDF5AD400C78B4E /* Main.storyboard */; };
 		5AB72A1E1CDF5AD400C78B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		5A9943A61CE67A25003C3879 /* KWEKeyboardBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEKeyboardBehaviour.m; sourceTree = "<group>"; };
 		5A9943A81CE67A5E003C3879 /* KWEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWEAdditions.h; sourceTree = "<group>"; };
 		5A9943A91CE67A5E003C3879 /* KWEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEAdditions.m; sourceTree = "<group>"; };
+		5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetailViewController.swift; sourceTree = "<group>"; };
 		5AB72A131CDF5AD400C78B4E /* UIKonf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKonf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB72A1B1CDF5AD400C78B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */,
 				5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */,
 				5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */,
+				5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */,
 				5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */,
 				5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */,
 				5ABC7FB21CE0678D001DFDA6 /* R.generated.swift */,
@@ -512,6 +515,7 @@
 				5ABC7FB31CE0678D001DFDA6 /* R.generated.swift in Sources */,
 				5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */,
 				5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */,
+				5A9943AC1CE88A3B003C3879 /* SpeakerDetailViewController.swift in Sources */,
 				52A49C001CE1AD540002B2C4 /* ImageView.swift in Sources */,
 				5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */,
 				5ABB02D81CDF607000249A7A /* Event.swift in Sources */,

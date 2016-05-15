@@ -17,7 +17,6 @@ class EventListViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.registerReusableCell(BasicTableViewCell)
-        tableView.rowHeight = 100
     }
     
     // MARK: - UITableViewDataSource
@@ -47,7 +46,7 @@ class EventListViewController: UITableViewController {
         }
     }
     
-    // MARK: -
+    // MARK: - Segue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
