@@ -13,8 +13,11 @@ public extension NibLoadable where Self: UIView {
     
     func loadReferenceFromNib() -> Self {
         let view = self.dynamicType.loadFromNib()
+        view.frame = frame
+        view.autoresizingMask = autoresizingMask
         view.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
         view.backgroundColor = backgroundColor
+        view.alpha = alpha
         
         for placeholderConstraint in constraints {
             let firstItem = (placeholderConstraint.firstItem === self) ? view : placeholderConstraint.firstItem
