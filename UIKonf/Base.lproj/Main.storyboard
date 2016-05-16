@@ -30,7 +30,7 @@
         <scene sceneID="lh3-mc-GQV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M3u-kr-jjo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Speakers" id="4fz-pa-uOn"/>
+                    <tabBarItem key="tabBarItem" title="Speakers" image="Megaphone" id="4fz-pa-uOn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZR6-BX-wsr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -59,7 +59,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIm-PH-Lr4" id="CiP-uS-89C">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -91,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Keh-c7-Maz" id="bdC-o7-0IV">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -350,7 +350,7 @@
         <scene sceneID="PtV-Xm-WO5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YzG-3J-9EZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" id="ERc-EP-XIt"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="Sign" id="ERc-EP-XIt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H62-5f-Afi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -368,5 +368,7 @@
     </scenes>
     <resources>
         <image name="Checkmark" width="75" height="75"/>
+        <image name="Megaphone" width="25" height="25"/>
+        <image name="Sign" width="25" height="25"/>
     </resources>
 </document>
