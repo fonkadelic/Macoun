@@ -352,31 +352,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHp-Z8-eiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="31q-Ou-bur" customClass="KWETextValidationBehaviour">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
-                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="owner" destination="g6C-DB-YoL" id="Zd6-FZ-aZP"/>
-                        <outlet property="textField" destination="po1-Dn-zNd" id="hCL-cH-teM"/>
-                        <outletCollection property="rules" destination="pSQ-nu-Iel" id="Q81-R0-O15"/>
-                    </connections>
-                </customObject>
-                <customObject id="pSQ-nu-Iel" customClass="KWEEmailRule"/>
-                <customObject id="WJE-he-Vwr" customClass="KWETextValidationBehaviour">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
-                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="owner" destination="g6C-DB-YoL" id="E6A-aA-bwE"/>
-                        <outlet property="textField" destination="8Wm-lh-fNh" id="leB-sM-PhX"/>
-                        <outletCollection property="rules" destination="mVZ-kf-Hrq" id="Z8r-nY-O13"/>
-                    </connections>
-                </customObject>
                 <view contentMode="scaleToFill" id="CRv-tx-zuD">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -404,6 +379,31 @@
                         <constraint firstItem="Gvh-V2-Dex" firstAttribute="top" secondItem="euL-L1-Lbz" secondAttribute="bottom" constant="16" id="fod-PE-4su"/>
                     </constraints>
                 </view>
+                <customObject id="31q-Ou-bur" customClass="KWETextValidationBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="owner" destination="g6C-DB-YoL" id="Zd6-FZ-aZP"/>
+                        <outlet property="textField" destination="po1-Dn-zNd" id="hCL-cH-teM"/>
+                        <outletCollection property="rules" destination="pSQ-nu-Iel" id="Q81-R0-O15"/>
+                    </connections>
+                </customObject>
+                <customObject id="pSQ-nu-Iel" customClass="KWEEmailRule"/>
+                <customObject id="WJE-he-Vwr" customClass="KWETextValidationBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="owner" destination="g6C-DB-YoL" id="E6A-aA-bwE"/>
+                        <outlet property="textField" destination="8Wm-lh-fNh" id="leB-sM-PhX"/>
+                        <outletCollection property="rules" destination="mVZ-kf-Hrq" id="Z8r-nY-O13"/>
+                    </connections>
+                </customObject>
                 <customObject id="mVZ-kf-Hrq" customClass="KWELengthRule">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="minCharacterCount">
