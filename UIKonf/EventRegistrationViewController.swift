@@ -10,14 +10,14 @@ import UIKit
 class EventRegistrationViewController: UIViewController {
     
     var event: Event!
-    @IBOutlet var headerView: HeaderView!
+    @IBOutlet var headerView: HeaderView?
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var registrationCompletedView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        headerView.configure(withTitle: event.name, imageResource: event.imageResource)
+        headerView?.configure(withTitle: event.name, imageResource: event.imageResource)
     }
     
     @IBAction func registerButtonTapped(sender: UIButton) {
