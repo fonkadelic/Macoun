@@ -100,7 +100,7 @@
     NSAssert(self.minCharacterCount > 0, @"Minimum character count must be > 0");
     NSAssert(self.maxCharacterCount <= 255, @"Maximum character count must be <= 255");
     
-    self.range = NSMakeRange(self.minCharacterCount, self.maxCharacterCount);
+    self.range = NSMakeRange(self.minCharacterCount, self.maxCharacterCount - self.minCharacterCount);
 }
 
 - (BOOL)evaluateWithString:(NSString *)string
