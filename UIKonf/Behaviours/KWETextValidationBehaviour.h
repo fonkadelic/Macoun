@@ -17,13 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) IBOutletCollection(id) NSArray *rules;
 
-- (BOOL)validateText;
-
 @property (nonatomic, weak, nullable) IBOutlet UITextField *textField;
-@property (nonatomic, weak, nullable) IBOutlet UIBarButtonItem *barButton;
+
 @property (nonatomic, strong, nullable) IBOutletCollection(UIControl) NSArray *controls;
+@property (nonatomic, weak, nullable) IBOutlet UIBarButtonItem *barButton;
 
 @property (nonatomic, strong, nullable) IBInspectable UIColor *invalidTextColor;
+
+- (BOOL)validateText;
 
 @end
 
