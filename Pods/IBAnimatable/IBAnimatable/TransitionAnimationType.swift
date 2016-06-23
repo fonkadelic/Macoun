@@ -9,29 +9,37 @@ import Foundation
  Predefined Transition Animation Type
  */
 public enum TransitionAnimationType {
-  case Fade             // ToView fades in and FromeView fades out
-  case FadeIn           // ToView fades in
-  case FadeOut          // FromView Fades out
-  case SystemSuckEffect
-  case SystemRippleEffect
-  case SystemCube(direction: TransitionFromDirection)
-  case SystemFlip(direction: TransitionFromDirection)
-  case SystemMoveIn(direction: TransitionFromDirection)
-  case SystemPush(direction: TransitionFromDirection)
-  case SystemReveal(direction: TransitionFromDirection)
-  case SystemPage(type: TransitionPageType)
-  case SystemCameraIris(hollowState: TransitionHollowState)
-  case SystemRotate(degree: TransitionRotateDegree)
-    
-  var stringValue: String {
+  case systemRotate
+  case systemSuckEffect
+  case systemRippleEffect
+  case explode(params: [String])
+  case fade(direction: TransitionDirection)
+  case fold(fromDirection: TransitionDirection, params: [String])
+  case portal(direction: TransitionDirection, params: [String])
+  case slide(toDirection: TransitionDirection, params: [String])
+  case natGeo(toDirection: TransitionDirection)
+  case turn(fromDirection: TransitionDirection)
+  case cards(direction: TransitionDirection)
+  case flip(fromDirection: TransitionDirection)
+  case systemCube(fromDirection: TransitionDirection)
+  case systemFlip(fromDirection: TransitionDirection)
+  case systemMoveIn(fromDirection: TransitionDirection)
+  case systemPush(fromDirection: TransitionDirection)
+  case systemReveal(fromDirection: TransitionDirection)
+  case systemPage(type: TransitionPageType)
+  case systemCameraIris(hollowState: TransitionHollowState)
+  
+  public var stringValue: String {
     return String(self)
   }
 
-  static func fromString(transitionType: String) -> TransitionAnimationType? {
+  public static func fromString(_ transitionType: String) -> TransitionAnimationType? {
     if transitionType.hasPrefix("SystemRippleEffect") {
-      return .SystemRippleEffect
+      return .systemRippleEffect
     } else if transitionType.hasPrefix("SystemSuckEffect") {
-        return .SystemSuckEffect
+        return .systemSuckEffect
+    } else if transitionType.hasPrefix("Explode") {
+      return .explode(params: params(forTransitionType: transitionType))
     } else if transitionType.hasPrefix("Fade") {
       return fadeTransitionAnimationType(transitionType)
     } else if transitionType.hasPrefix("SystemCameraIris") {
@@ -39,8 +47,8 @@ public enum TransitionAnimationType {
     } else if transitionType.hasPrefix("SystemPage") {
       return pageTransitionAnimationType(transitionType)
     } else if transitionType.hasPrefix("SystemRotate") {
-      return rotateTransitionAnimationType(transitionType)
-    } else  {
+      return .systemRotate
+    } else {
       return fromStringWithDirection(transitionType)
     }
   }
@@ -51,92 +59,102 @@ public enum TransitionAnimationType {
 
 private extension TransitionAnimationType {
   
-  static func fadeTransitionAnimationType(transitionType: String) -> TransitionAnimationType {
-    if transitionType.hasSuffix("In") {
-      return .FadeIn
-    } else if transitionType.hasSuffix("Out") {
-      return .FadeOut
+  static func fadeTransitionAnimationType(_ transitionType: String) -> TransitionAnimationType {
+    let transitionParams = params(forTransitionType: transitionType)
+    if transitionParams.contains("in") {
+      return .fade(direction: .in)
+    } else if transitionParams.contains("out") {
+      return .fade(direction: .out)
     }
-    return .Fade
+    return .fade(direction: .cross)
   }
  
-  static func cameraIrisTransitionAnimationType(transitionType: String) -> TransitionAnimationType? {
-    let transitionType = cleanTransitionType(transitionType)
-    if transitionType.containsString("hollowopen") {
-      return .SystemCameraIris(hollowState: .Open)
-    } else if transitionType.containsString("hollowclose") {
-      return .SystemCameraIris(hollowState: .Close)
+  static func cameraIrisTransitionAnimationType(_ transitionType: String) -> TransitionAnimationType? {
+    let transitionParams = params(forTransitionType: transitionType)
+    if transitionParams.contains("hollowopen") {
+      return .systemCameraIris(hollowState: .open)
+    } else if transitionParams.contains("hollowclose") {
+      return .systemCameraIris(hollowState: .close)
     }
-    return .SystemCameraIris(hollowState: .None)
+    return .systemCameraIris(hollowState: .none)
   }
   
-  static func pageTransitionAnimationType(transitionType: String) -> TransitionAnimationType? {
-    let transitionType = cleanTransitionType(transitionType)
-    if transitionType.containsString("uncurl") {
-      return .SystemPage(type: .UnCurl)
-    } else if transitionType.containsString("curl") {
-      return .SystemPage(type: .Curl)      
+  static func pageTransitionAnimationType(_ transitionType: String) -> TransitionAnimationType? {
+    let transitionParams = params(forTransitionType: transitionType)
+    if transitionParams.contains("uncurl") {
+      return .systemPage(type: .unCurl)
+    } else if transitionParams.contains("curl") {
+      return .systemPage(type: .curl)      
     }
     return nil
   }
   
-  static func rotateTransitionAnimationType(transitionType: String) -> TransitionAnimationType? {
-    let transitionType = cleanTransitionType(transitionType)
-    if transitionType.containsString("90ccw") || transitionType.containsString("ninetyccw") {
-      return .SystemRotate(degree: .NinetyCCW)
-    } else if transitionType.containsString("90") || transitionType.containsString("ninety") {
-      return .SystemRotate(degree: .Ninety)
-    } else if transitionType.containsString("180ccw") || transitionType.containsString("OneHundredHeightyccw") {
-      return .SystemRotate(degree: .OneHundredHeightyCCW)
-    } else if transitionType.containsString("180") || transitionType.containsString("OneHundredHeighty") {
-      return .SystemRotate(degree: .OneHundredHeighty)
-    }
-    return nil
-  }
-  
-  static func fromStringWithDirection(transitionType: String) -> TransitionAnimationType? {
-    guard let direction = transitionDirection(forTransitionType: transitionType) else {
-      return nil
-    }
-    
+  static func fromStringWithDirection(_ transitionType: String) -> TransitionAnimationType? {
+    let transitionParams = params(forTransitionType: transitionType)
+    let direction = transitionDirection(forParams: transitionParams) ?? .left
     if transitionType.hasPrefix("SystemCube") {
-      return .SystemCube(direction: direction)
+      return .systemCube(fromDirection: direction)
     } else if transitionType.hasPrefix("SystemFlip") {
-      return .SystemFlip(direction: direction)
+      return .systemFlip(fromDirection: direction)
     } else if transitionType.hasPrefix("SystemMoveIn") {
-      return .SystemMoveIn(direction: direction)
+      return .systemMoveIn(fromDirection: direction)
     } else if transitionType.hasPrefix("SystemPush") {
-      return .SystemPush(direction: direction)
+      return .systemPush(fromDirection: direction)
     } else if transitionType.hasPrefix("SystemReveal") {
-      return .SystemReveal(direction: direction)
+      return .systemReveal(fromDirection: direction)
+    } else if transitionType.hasPrefix("NatGeo") {
+      return .natGeo(toDirection: direction)
+    } else if transitionType.hasPrefix("Turn") {
+      return .turn(fromDirection: direction)      
+    } else if transitionType.hasPrefix("Cards") {
+      return .cards(direction: direction)
+    } else if transitionType.hasPrefix("Flip") {
+      return .flip(fromDirection: direction)
+    } else {
+      return fromStringWithDirectionAndParams(transitionType, direction: direction, params: transitionParams)
+    }
+  }
+  
+  static func fromStringWithDirectionAndParams(_ transitionType: String, direction: TransitionDirection, params: [String]) -> TransitionAnimationType? {
+    var params = params
+    params.removeFirst()
+    if transitionType.hasPrefix("Fold") {
+      return .fold(fromDirection: direction, params: params)
+    } else if transitionType.hasPrefix("Portal") {
+      return .portal(direction: direction, params: params)
+    } else if transitionType.hasPrefix("Slide") {
+      return .slide(toDirection: direction, params: params)
     }
     return nil
   }
-  
 }
 
 // MARK: - Helpers
 
 private extension TransitionAnimationType {
   
-  static func cleanTransitionType(transitionType: String) -> String {
-    let range = transitionType.rangeOfString("(")
-    let transitionType = transitionType.stringByReplacingOccurrencesOfString(" ", withString: "")
-      .lowercaseString
-      .substringFromIndex(range?.startIndex ?? transitionType.endIndex)
-    return transitionType
+  static func params(forTransitionType transitionType: String) -> [String] {
+    let range = transitionType.range(of: "(")
+    let transitionType = transitionType.replacingOccurrences(of: " ", with: "").lowercased()
+      .substring(from: range?.lowerBound ?? transitionType.endIndex)
+      .replacingOccurrences(of: "(", with: "")
+      .replacingOccurrences(of: ")", with: "")
+    return transitionType.components(separatedBy: ",")
   }
   
-  static func transitionDirection(forTransitionType transitionType: String) -> TransitionFromDirection? {
-    let transitionType = cleanTransitionType(transitionType)
-    if transitionType.containsString("left") {
-      return .Left
-    } else if transitionType.containsString("right") {
-      return .Right
-    } else if transitionType.containsString("top") {
-      return .Top
-    } else if transitionType.containsString("bottom") {
-      return .Bottom
+  static func transitionDirection(forParams params: [String]) -> TransitionDirection? {
+    if params.contains("left") {
+      return .left
+    } else if params.contains("right") {
+      return .right
+    } else if params.contains("top") {
+      return .top
+    } else if params.contains("bottom") {
+      return .bottom
+    } else if params.contains("forward") {
+      return .forward
+    } else if params.contains("backward") {
+      return .backward
     }
     return nil
   }

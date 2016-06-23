@@ -7,18 +7,16 @@
 
 import UIKit
 import IBAnimatable
-import Rswift
-import Reusable
 
-class BasicTableViewCell: AnimatableTableViewCell, NibReusable {
+class BasicTableViewCell: AnimatableTableViewCell {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var pictureView: UIImageView!
     
-    func configure(withTitle title: String, detail: String, imageResource: ImageResource) {
+    func configure(withTitle title: String, detail: String, image: UIImage) {
         titleLabel.text = title
         descriptionLabel.text = detail
-        pictureView.image = UIImage(resource: imageResource)
+        pictureView.image = image
     }
 }

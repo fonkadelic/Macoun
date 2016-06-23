@@ -16,30 +16,29 @@ public class SystemFlipAnimator: NSObject, AnimatedTransitioning {
   public var interactiveGestureType: InteractiveGestureType?
 
   // MARK: - private
-  private var fromDirection: TransitionFromDirection
-  private var animationOption: UIViewAnimationOptions
+  private var fromDirection: TransitionDirection
   
-  init(fromDirection: TransitionFromDirection, transitionDuration: Duration) {
+  public init(fromDirection: TransitionDirection, transitionDuration: Duration) {
     self.fromDirection = fromDirection
     self.transitionDuration = transitionDuration
     
     switch fromDirection {
-    case .Left:
-      self.transitionAnimationType = .SystemFlip(direction: .Left)
-      self.reverseAnimationType = .SystemFlip(direction: .Right)
-      self.animationOption = .TransitionFlipFromLeft
-    case .Right:
-      self.transitionAnimationType = .SystemFlip(direction: .Right)
-      self.reverseAnimationType = .SystemFlip(direction: .Left)
-      self.animationOption = .TransitionFlipFromRight
-    case .Top:
-      self.transitionAnimationType = .SystemFlip(direction: .Top)
-      self.reverseAnimationType = .SystemFlip(direction: .Bottom)
-      self.animationOption = .TransitionFlipFromTop
-    case .Bottom:
-      self.transitionAnimationType = .SystemFlip(direction: .Bottom)
-      self.reverseAnimationType = .SystemFlip(direction: .Top)
-      self.animationOption = .TransitionFlipFromBottom
+    case .right:
+      self.transitionAnimationType = .systemFlip(fromDirection: .right)
+      self.reverseAnimationType = .systemFlip(fromDirection: .left)
+      self.interactiveGestureType = .pan(fromDirection: .Left)
+    case .top:
+      self.transitionAnimationType = .systemFlip(fromDirection: .top)
+      self.reverseAnimationType = .systemFlip(fromDirection: .bottom)
+      self.interactiveGestureType = .pan(fromDirection: .Bottom)
+    case .bottom:
+      self.transitionAnimationType = .systemFlip(fromDirection: .bottom)
+      self.reverseAnimationType = .systemFlip(fromDirection: .top)
+      self.interactiveGestureType = .pan(fromDirection: .Top)
+    default:
+      self.transitionAnimationType = .systemFlip(fromDirection: .left)
+      self.reverseAnimationType = .systemFlip(fromDirection: .right)
+      self.interactiveGestureType = .pan(fromDirection: .Right)
     }
     
     super.init()
@@ -47,11 +46,11 @@ public class SystemFlipAnimator: NSObject, AnimatedTransitioning {
 }
 
 extension SystemFlipAnimator: UIViewControllerAnimatedTransitioning {
-  public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+  public func transitionDuration(_ transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
     return retrieveTransitionDuration(transitionContext)
   }
   
-  public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-    animateWithCATransition(transitionContext, type: SystemTransitionType.Flip, subtype: fromDirection.stringValue)
+  public func animateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+    animateWithCATransition(transitionContext, type: SystemTransitionType.Flip, subtype: fromDirection.CATransitionSubtype)
   }
 }

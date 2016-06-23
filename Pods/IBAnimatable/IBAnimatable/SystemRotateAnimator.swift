@@ -12,38 +12,21 @@ public class SystemRotateAnimator: NSObject, AnimatedTransitioning {
   public var reverseAnimationType: TransitionAnimationType?
   public var interactiveGestureType: InteractiveGestureType?
   
-  // MARK: - private
-  private var degree: TransitionRotateDegree
-  
-  init(withDegree degree: TransitionRotateDegree, transitionDuration: Duration) {
-    self.degree = degree
+  public init(transitionDuration: Duration) {
     self.transitionDuration = transitionDuration
-    
-    switch degree {
-    case .Ninety:
-      self.transitionAnimationType = .SystemRotate(degree: .Ninety)
-      self.reverseAnimationType = .SystemRotate(degree: .NinetyCCW)
-    case .NinetyCCW:
-      self.transitionAnimationType = .SystemRotate(degree: .NinetyCCW)
-      self.reverseAnimationType = .SystemRotate(degree: .Ninety)
-    case .OneHundredHeighty:
-      self.transitionAnimationType = .SystemRotate(degree: .OneHundredHeighty)
-      self.reverseAnimationType = .SystemRotate(degree: .OneHundredHeightyCCW)
-    case .OneHundredHeightyCCW:
-      self.transitionAnimationType = .SystemRotate(degree: .OneHundredHeightyCCW)
-      self.reverseAnimationType = .SystemRotate(degree: .OneHundredHeighty)
-    }
+    self.transitionAnimationType = .systemRotate
+    self.reverseAnimationType = .systemRotate
     
     super.init()
   }
 }
 
 extension SystemRotateAnimator: UIViewControllerAnimatedTransitioning {
-  public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+  public func transitionDuration(_ transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
     return retrieveTransitionDuration(transitionContext)
   }
   
-  public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-    animateWithCATransition(transitionContext, type: SystemTransitionType.Rotate, subtype: degree.stringValue)
+  public func animateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+    animateWithCATransition(transitionContext, type: SystemTransitionType.Rotate, subtype: "90")
   }
 }

@@ -1,21 +1,25 @@
 PODS:
-  - IBAnimatable (2.2)
-  - R.swift (2.1.0):
-    - R.swift.Library (~> 2.0.0)
-  - R.swift.Library (2.0.0)
-  - Reusable (2.2.1)
+  - IBAnimatable (2.3)
+  - Reusable (2.3.0)
 
 DEPENDENCIES:
-  - IBAnimatable (~> 2.2)
-  - R.swift (~> 2.1.0)
-  - Reusable (~> 2.2.1)
+  - IBAnimatable (from `https://github.com/JakeLin/IBAnimatable`, branch `swift3`)
+  - Reusable
+
+EXTERNAL SOURCES:
+  IBAnimatable:
+    :branch: swift3
+    :git: https://github.com/JakeLin/IBAnimatable
+
+CHECKOUT OPTIONS:
+  IBAnimatable:
+    :commit: aad8e56d7c99cf001cf15ba33afe9fbcc9df1b3b
+    :git: https://github.com/JakeLin/IBAnimatable
 
 SPEC CHECKSUMS:
-  IBAnimatable: 41ddf0b307ebec241d5dd510f472c51fb7fe519b
-  R.swift: efff131531b5cf142e28fd94957806ff71ccbcf2
-  R.swift.Library: 9f4b2d12040daa1ffe336d8f7e1574f73721fd01
-  Reusable: 4a86b0fa0eefbe3126675617a7e921b673d530c1
+  IBAnimatable: aafa60405dd69e9bbd3edc9c00fa150e13433951
+  Reusable: 0fec1f7fedf69acbc7710fc7cab86a1a1a3f2542
 
-PODFILE CHECKSUM: 4749a83a3192f86500a5d93c5486b12e745c25ef
+PODFILE CHECKSUM: d57558f030bcb3248ba355b05b91f7dbc99a1cdf
 
 COCOAPODS: 1.0.0

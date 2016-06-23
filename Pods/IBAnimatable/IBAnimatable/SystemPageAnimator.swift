@@ -15,17 +15,17 @@ public class SystemPageAnimator: NSObject, AnimatedTransitioning {
   // MARK: - private
   private var type: TransitionPageType
   
-  init(type: TransitionPageType, transitionDuration: Duration) {
+  public init(type: TransitionPageType, transitionDuration: Duration) {
     self.transitionDuration = transitionDuration
     self.type = type
     
     switch type {
-    case .Curl:
-      self.transitionAnimationType = .SystemPage(type: .Curl)
-      self.reverseAnimationType = .SystemPage(type: .UnCurl)
-    case .UnCurl:
-      self.transitionAnimationType = .SystemPage(type: .UnCurl)
-      self.reverseAnimationType = .SystemPage(type: .Curl)
+    case .curl:
+      self.transitionAnimationType = .systemPage(type: .curl)
+      self.reverseAnimationType = .systemPage(type: .unCurl)
+    case .unCurl:
+      self.transitionAnimationType = .systemPage(type: .unCurl)
+      self.reverseAnimationType = .systemPage(type: .curl)
     }
     
     super.init()
@@ -33,15 +33,15 @@ public class SystemPageAnimator: NSObject, AnimatedTransitioning {
 }
 
 extension SystemPageAnimator: UIViewControllerAnimatedTransitioning {
-  public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+  public func transitionDuration(_ transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
     return retrieveTransitionDuration(transitionContext)
   }
   
-  public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+  public func animateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
     switch self.type {
-    case .Curl:
+    case .curl:
       animateWithCATransition(transitionContext, type: SystemTransitionType.PageCurl, subtype: nil)
-    case .UnCurl:
+    case .unCurl:
       animateWithCATransition(transitionContext, type: SystemTransitionType.PageUnCurl, subtype: nil)
     }
   }

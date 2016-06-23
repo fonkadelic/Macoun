@@ -7,7 +7,6 @@
 
 import UIKit
 import Reusable
-import Rswift
 
 public extension NibLoadable where Self: UIView {
     
@@ -35,7 +34,7 @@ public extension NibLoadable where Self: UIView {
             constraint.identifier = placeholderConstraint.identifier
             constraint.shouldBeArchived = placeholderConstraint.shouldBeArchived
             constraint.priority = placeholderConstraint.priority
-            constraint.active = placeholderConstraint.active
+            constraint.isActive = placeholderConstraint.isActive
             
             view.addConstraint(constraint)
         }
@@ -49,16 +48,16 @@ class HeaderView: UIView, NibLoadable {
     @IBOutlet var pictureView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     
-    override func awakeAfterUsingCoder(aDecoder: NSCoder) -> AnyObject? {
+    override func awakeAfter(using aDecoder: NSCoder) -> AnyObject? {
         if subviews.count > 0 {
-            return super.awakeAfterUsingCoder(aDecoder)
+            return super.awakeAfter(using: aDecoder)
         }
         
         return loadReferenceFromNib()
     }
     
-    func configure(withTitle title: String, imageResource: ImageResource) {
+    func configure(withTitle title: String, image: UIImage) {
         titleLabel.text = title
-        pictureView.image = UIImage(resource: imageResource)
+        pictureView.image = image
     }
 }

@@ -49,27 +49,32 @@ public protocol SideImageDesignable {
 
 public extension SideImageDesignable where Self: UITextField {
 
-  public func configLeftImage() {
+  public func configImages() {
+    configLeftImage()
+    configRightImage()
+  }
+  
+  private func configLeftImage() {
     guard let wrappedLeftImage = leftImage else {
       return
     }
     
     let sideView = generateSideViewWithImage(wrappedLeftImage, leftPadding: leftImageLeftPadding, rightPadding: leftImageRightPadding, topPadding: leftImageTopPadding)
-    leftViewMode = .Always
+    leftViewMode = .always
     leftView = sideView
   }
   
-  public func configRightImage() {
+  private func configRightImage() {
     guard let wrappedRightImage = rightImage else {
       return
     }
     
     let sideView = generateSideViewWithImage(wrappedRightImage, leftPadding: rightImageLeftPadding, rightPadding: rightImageRightPadding, topPadding: rightImageTopPadding)
-    rightViewMode = .Always
+    rightViewMode = .always
     rightView = sideView
   }
   
-  private func generateSideViewWithImage(image: UIImage, leftPadding: CGFloat, rightPadding: CGFloat, topPadding: CGFloat) -> UIView {
+  private func generateSideViewWithImage(_ image: UIImage, leftPadding: CGFloat, rightPadding: CGFloat, topPadding: CGFloat) -> UIView {
     let imageView = UIImageView(image: image)
     
     // If not set, use 0 as default value

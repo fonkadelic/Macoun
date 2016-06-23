@@ -7,39 +7,51 @@ import UIKit
 /**
  Animator Factory
  */
-struct AnimatorFactory {
-  static func generateAnimator(transitionAnimationType: TransitionAnimationType) -> AnimatedTransitioning {
+public struct AnimatorFactory {
+  public static func generateAnimator(_ transitionAnimationType: TransitionAnimationType) -> AnimatedTransitioning {
     return generateAnimator(transitionAnimationType, transitionDuration: defaultTransitionDuration)
   }
 
-  static func generateAnimator(transitionAnimationType: TransitionAnimationType, transitionDuration: Duration) -> AnimatedTransitioning {
+  public static func generateAnimator(_ transitionAnimationType: TransitionAnimationType, transitionDuration: Duration) -> AnimatedTransitioning {
     switch transitionAnimationType {
-    case .Fade:
-      return FadeAnimator(fadeType: .Fade, transitionDuration: transitionDuration)
-    case .FadeIn:
-      return FadeAnimator(fadeType: .FadeIn, transitionDuration: transitionDuration)
-    case .FadeOut:
-      return FadeAnimator(fadeType: .FadeOut, transitionDuration: transitionDuration)
-    case .SystemSuckEffect:
+    case .systemRotate:
+      return SystemRotateAnimator(transitionDuration: transitionDuration)
+    case .systemSuckEffect:
       return SystemSuckEffectAnimator(transitionDuration: transitionDuration)
-    case .SystemRippleEffect:
+    case .systemRippleEffect:
       return SystemRippleEffectAnimator(transitionDuration: transitionDuration)
-    case .SystemCube(let direction):
+    case let .explode(params):
+      return ExplodeAnimator(params: params, transitionDuration: transitionDuration)
+    case let .fade(direction):
+      return FadeAnimator(direction: direction, transitionDuration: transitionDuration)
+    case let .fold(direction, params):
+      return FoldAnimator(fromDirection: direction, params: params, transitionDuration: transitionDuration)
+    case let .portal(direction, params):
+      return PortalAnimator(fromDirection: direction, params: params, transitionDuration: transitionDuration)
+    case let .natGeo(direction):
+      return NatGeoAnimator(fromDirection: direction, transitionDuration: transitionDuration)
+    case let .turn(direction):
+      return TurnAnimator(fromDirection: direction, transitionDuration: transitionDuration)
+    case let .cards(direction):
+      return CardsAnimator(fromDirection: direction, transitionDuration: transitionDuration)
+    case let .flip(direction):
+      return FlipAnimator(fromDirection: direction, transitionDuration: transitionDuration)
+    case let .slide(direction, params):
+      return SlideAnimator(fromDirection: direction, params: params, transitionDuration: transitionDuration)
+    case let .systemCube(direction):
       return SystemCubeAnimator(fromDirection: direction, transitionDuration: transitionDuration)
-    case .SystemFlip(let direction):
+    case let .systemFlip(direction):
       return SystemFlipAnimator(fromDirection: direction, transitionDuration: transitionDuration)
-    case .SystemMoveIn(let direction):
+    case let .systemMoveIn(direction):
       return SystemMoveInAnimator(fromDirection: direction, transitionDuration: transitionDuration)
-    case .SystemPush(let direction):
+    case let .systemPush(direction):
       return SystemPushAnimator(fromDirection: direction, transitionDuration: transitionDuration)
-    case .SystemReveal(let direction):
+    case let .systemReveal(direction):
       return SystemRevealAnimator(fromDirection: direction, transitionDuration: transitionDuration)
-    case .SystemPage(let type):
+    case let .systemPage(type):
       return SystemPageAnimator(type: type, transitionDuration: transitionDuration)
-    case .SystemCameraIris(let hollowState):
+    case let .systemCameraIris(hollowState):
       return SystemCameraIrisAnimator(hollowState: hollowState, transitionDuration: transitionDuration)
-    case .SystemRotate(let degree):
-      return SystemRotateAnimator(withDegree: degree, transitionDuration: transitionDuration)
     }
   }
   
