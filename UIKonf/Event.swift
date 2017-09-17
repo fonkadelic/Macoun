@@ -6,14 +6,13 @@
 //
 
 import Foundation
-import Rswift
 
 
 public struct Event {
     let id: Int
     let name: String
     let description: String
-    let imageResource: ImageResource
+    let image: UIImage
 }
 
 extension Event {
@@ -22,37 +21,37 @@ extension Event {
             id: 0,
             name: "Bike Tour",
             description: "UIKonf bike tour has become a tradition. The tour of 2016 will continue that tradition.",
-            imageResource: R.image.bikeTour
+            image: #imageLiteral(resourceName: "bike-tour")
         ),
         Event(
             id: 1,
             name: "A Boat Tour on the Spree",
             description: "Relax, enjoy Berlin from a boat and chat with other UIKonf participants.",
-            imageResource: R.image.boatTour
+            image: #imageLiteral(resourceName: "boat-tour")
         ),
         Event(
             id: 2,
             name: "Brewery Tour",
             description: "Follow a German tradition and learn how to brew beer at the Brewery Tour.",
-            imageResource: R.image.breweryTour
+            image: #imageLiteral(resourceName: "brewery-tour")
         ),
         Event(
             id: 3,
             name: "WWII Bomb-Shelter Tour",
             description: "A guided tour of a WWII bomb shelter",
-            imageResource: R.image.shelterTour
+            image: #imageLiteral(resourceName: "shelter-tour")
         ),
         Event(
             id: 4,
             name: "Stasi Museum Tour",
             description: "Visit the former GDR state security head office which has been conserved in time.",
-            imageResource: R.image.stasiTour
+            image: #imageLiteral(resourceName: "stasi-tour")
         ),
         Event(
             id: 5,
             name: "Tempelhof Airport Tour",
             description: "Ever wondered how Tempelhof airport looks from the inside? Then join this tour.",
-            imageResource: R.image.airportTour
+            image: #imageLiteral(resourceName: "airport-tour")
         ),
     ]
 }

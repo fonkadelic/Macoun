@@ -17,16 +17,16 @@ class EventRegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        headerView?.configure(withTitle: event.name, imageResource: event.imageResource)
+        headerView?.configure(withTitle: event.name, image: event.image)
     }
     
-    @IBAction func registerButtonTapped(sender: UIButton) {
-        scrollView.hidden = true
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
+        scrollView.isHidden = true
         
         registrationCompletedView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(registrationCompletedView)
-        registrationCompletedView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor).active = true
-        registrationCompletedView.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
-        registrationCompletedView.centerYAnchor.constraintEqualToAnchor(view.centerYAnchor).active = true
+        registrationCompletedView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        registrationCompletedView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        registrationCompletedView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }

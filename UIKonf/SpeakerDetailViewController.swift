@@ -16,7 +16,7 @@ class SpeakerDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        headerView.configure(withTitle: speaker.name, imageResource: speaker.imageResource)
+        headerView.configure(withTitle: speaker.name, image: speaker.image)
         bioLabel.text = speaker.longBio
     }    
 }

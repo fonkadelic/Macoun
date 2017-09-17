@@ -1,21 +1,22 @@
 PODS:
-  - IBAnimatable (2.2)
-  - R.swift (2.1.0):
-    - R.swift.Library (~> 2.0.0)
-  - R.swift.Library (2.0.0)
-  - Reusable (2.2.1)
+  - IBAnimatable (4.2.0)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - SwiftGen (5.1.1)
 
 DEPENDENCIES:
-  - IBAnimatable (~> 2.2)
-  - R.swift (~> 2.1.0)
-  - Reusable (~> 2.2.1)
+  - IBAnimatable (~> 4.2)
+  - Reusable (~> 4.0)
+  - SwiftGen (~> 5.1)
 
 SPEC CHECKSUMS:
-  IBAnimatable: 41ddf0b307ebec241d5dd510f472c51fb7fe519b
-  R.swift: efff131531b5cf142e28fd94957806ff71ccbcf2
-  R.swift.Library: 9f4b2d12040daa1ffe336d8f7e1574f73721fd01
-  Reusable: 4a86b0fa0eefbe3126675617a7e921b673d530c1
+  IBAnimatable: d9d20f1c627ee97c736c55f791da9c83f6bd1bec
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  SwiftGen: daba48311d62361eb204a55e579c3c88dd99327e
 
-PODFILE CHECKSUM: 4749a83a3192f86500a5d93c5486b12e745c25ef
+PODFILE CHECKSUM: f11ddb1ada7c8a9e6d45e5a66b77f352d8fffab5
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.3.1

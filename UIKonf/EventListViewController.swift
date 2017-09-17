@@ -15,45 +15,44 @@ class EventListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.registerReusableCell(BasicTableViewCell)
+
+        tableView.register(cellType: BasicTableViewCell.self)
     }
     
     // MARK: - UITableViewDataSource
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(indexPath: indexPath) as BasicTableViewCell
-        cell.accessoryType = .DisclosureIndicator
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath) as BasicTableViewCell
+        cell.accessoryType = .disclosureIndicator
         let event = events[indexPath.row]
-        cell.configure(withTitle: event.name, detail: event.description, imageResource: event.imageResource)
+        cell.configure(withTitle: event.name, detail: event.description, image: event.image)
         
         return cell
     }
     
     // MARK: - UITableViewDelegate
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier(R.segue.eventListViewController.showEventRegistration, sender: self)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        perform(segue: StoryboardSegue.Main.showEventRegistration)
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let animatableCell = cell as? AnimatableTableViewCell {
-            animatableCell.animate()
+            animatableCell.animate(.none)
         }
     }
     
     // MARK: - Segue
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-        if let segueInfo = R.segue.eventListViewController.showEventRegistration(segue: segue),
-           let selectedIndexPath = tableView.indexPathForSelectedRow {
-            
-            segueInfo.destinationViewController.event = events[selectedIndexPath.row]
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if case .showEventRegistration = StoryboardSegue.Main(rawValue: segue.identifier!)!,
+            let selectedIndexPath = tableView.indexPathForSelectedRow,
+            let eventRegistrationViewController = segue.destination as? EventRegistrationViewController {
+            eventRegistrationViewController.event = events[selectedIndexPath.row]
         }
     }
 }
