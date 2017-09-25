@@ -33,6 +33,7 @@
 		5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */; };
 		5ABB02E21CDF825D00249A7A /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */; };
 		5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */; };
+		5AC1C9A71F77E85700DB66E9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1C9A61F77E85700DB66E9 /* TableViewController.swift */; };
 		7847DC687566618BAA3EFF9A /* Pods_UIKonfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10D8B10C181FEA20BCA810 /* Pods_UIKonfTests.framework */; };
 		7AC566A48A661AC5A480A180 /* Pods_UIKonf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB05EA2D1699C9E05DB7949 /* Pods_UIKonf.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		5ABB02DF1CDF825D00249A7A /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
 		5ABC7FAD1CE0633C001DFDA6 /* EventRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRegistrationViewController.swift; sourceTree = "<group>"; };
+		5AC1C9A61F77E85700DB66E9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AB10D8B10C181FEA20BCA810 /* Pods_UIKonfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKonfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF13E69DF988FCC29E2DE180 /* Pods-UIKonf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKonf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKonf/Pods-UIKonf.debug.xcconfig"; sourceTree = "<group>"; };
 		EDB05EA2D1699C9E05DB7949 /* Pods_UIKonf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKonf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,7 @@
 				5A034DBB1F6EB5D900C83959 /* Constants */,
 				5A5448211CE5065A0008B531 /* Supporting Files */,
 				5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */,
+				5AC1C9A61F77E85700DB66E9 /* TableViewController.swift */,
 				5AB72A441CDF5B1100C78B4E /* SpeakerListViewController.swift */,
 				5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */,
 				5ABB02D51CDF602200249A7A /* EventListViewController.swift */,
@@ -512,6 +515,7 @@
 			files = (
 				5A54481B1CE503F90008B531 /* KWEBehaviour.m in Sources */,
 				5A9943AA1CE67A5E003C3879 /* KWEAdditions.m in Sources */,
+				5AC1C9A71F77E85700DB66E9 /* TableViewController.swift in Sources */,
 				5AB72A451CDF5B1100C78B4E /* SpeakerListViewController.swift in Sources */,
 				5A6117BF1CE0ED5E00A52AAA /* HeaderView.swift in Sources */,
 				5ABB02D61CDF602200249A7A /* EventListViewController.swift in Sources */,
