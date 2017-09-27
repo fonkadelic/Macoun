@@ -61,7 +61,7 @@ class TableViewController<Item, Cell: NibReusable>: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier,
-            let handler = prepareHandlers.removeValue(forKey: identifier) else { fatalError(); }
+            let handler = prepareHandlers.removeValue(forKey: identifier) else { fatalError() }
 
         handler(segue)
     }

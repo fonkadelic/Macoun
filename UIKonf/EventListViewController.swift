@@ -9,50 +9,24 @@ import UIKit
 import IBAnimatable
 import Reusable
 
-class EventListViewController: UITableViewController {
-    
-    let events = Event.allEvents
+final class EventListViewController: TableViewController<Event, BasicTableViewCell> {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
 
-        tableView.register(cellType: BasicTableViewCell.self)
-    }
-    
-    // MARK: - UITableViewDataSource
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath) as BasicTableViewCell
-        cell.accessoryType = .disclosureIndicator
-        let event = events[indexPath.row]
-        cell.configure(withTitle: event.name, detail: event.description, image: event.image)
-        
-        return cell
-    }
-    
-    // MARK: - UITableViewDelegate
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        perform(segue: StoryboardSegue.Main.showEventRegistration)
-    }
-    
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let animatableCell = cell as? AnimatableTableViewCell {
-            animatableCell.animate(.none)
+        items = Event.allEvents
+        configureCell = { cell, event in
+            cell.configure(withTitle: event.name, detail: event.description, image: event.image)
         }
-    }
-    
-    // MARK: - Segue
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if case .showEventRegistration = StoryboardSegue.Main(rawValue: segue.identifier!)!,
-            let selectedIndexPath = tableView.indexPathForSelectedRow,
-            let eventRegistrationViewController = segue.destination as? EventRegistrationViewController {
-            eventRegistrationViewController.event = events[selectedIndexPath.row]
+        willDisplayCell = { cell in
+            cell.animate(.none)
+        }
+        didSelect = { [unowned self] event in
+            self.perform(segue: StoryboardSegue.Main.showEventRegistration, prepare: { segue in
+                guard let detail = segue.destination as? EventRegistrationViewController
+                    else { fatalError("Wrong view controller type.") }
+                detail.event = event
+            })
         }
     }
 }
