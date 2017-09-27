@@ -8,7 +8,7 @@
 import UIKit
 import Reusable
 
-class TableViewController<Item, Cell: NibReusable>: UITableViewController {
+class TableViewController<Item, Cell: UITableViewCell & NibReusable>: UITableViewController {
 
     var items: [Item] = [] {
         didSet {
@@ -24,7 +24,7 @@ class TableViewController<Item, Cell: NibReusable>: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(Cell.nib, forCellReuseIdentifier: Cell.reuseIdentifier)
+        tableView.register(cellType: Cell.self)
     }
 
     // MARK: - UITableViewDataSource
@@ -34,10 +34,10 @@ class TableViewController<Item, Cell: NibReusable>: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Cell.reuseIdentifier, for: indexPath) as! Cell
+        let cell: Cell = tableView.dequeueReusableCell(for: indexPath)
         configureCell?(cell, items[indexPath.row])
 
-        return cell as! UITableViewCell
+        return cell
     }
 
     // MARK: - UITableViewDelegate
