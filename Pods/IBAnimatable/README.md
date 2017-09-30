@@ -5,7 +5,7 @@ Design and prototype customized UI, interaction, navigation, transition and anim
 ![IBAnimatable hero image](https://raw.githubusercontent.com/IBAnimatable/IBAnimatable-Misc/master/IBAnimatable/IBAnimatable.gif)
 
 [![Build Status](https://travis-ci.org/IBAnimatable/IBAnimatable.svg?branch=master)](https://travis-ci.org/IBAnimatable/IBAnimatable)
-[![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)](https://swift.org)
+[![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg)](https://swift.org)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IBAnimatable.svg?style=flat)](http://cocoadocs.org/docsets/IBAnimatable/)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/github/license/IBAnimatable/IBAnimatable.svg?style=flat)](https://github.com/IBAnimatable/IBAnimatable/blob/master/LICENSE)
@@ -31,19 +31,26 @@ With `IBAnimatable`, we can design a UI in Interface Builder like what we can do
 
 As a designer, we love Sketch, which is a simple but yet super powerful tool to create UI. However, Sketch can't design interaction, navigation, transition and animation, and we may need another tool like Framer to design some of them. Moreover, to make an App Store ready App, we need to use Xcode and Interface Builder to implement the UI and animations. To speed up the process and minimize the waste, we create `IBAnimatable` to make Interface Builder designable and animatable.   
 
-## Version 4
-IBAnimatable 4.0 is the latest major release of IBAnimatable. This version introduces promise-like animation API, and contains some breaking changes from version 3.x. Please check out [IBAnimatable 4.0 Migration Guide](Documentation/IBAnimatable 4.0 Migration Guide.md) for more information about how to migrate your project to 4.0. 
+## Version 5
+IBAnimatable 5.0 is the latest major release of IBAnimatable. This version supports Swift 4. There are no API breaking changes from migrating from version 4.x. 
+
+If you migrate from version 3.x. Please check out [IBAnimatable 4.0 Migration Guide](Documentation/IBAnimatable 4.0 Migration Guide.md) for more information.
 
 ## Swift version
+### Swift 4
+There are no API breaking changes when migrating from Swift 3.2 to Swift 4 using IBAnimatable.
+
+If you are using Xcode 9 with Swift 4, please use the latest tagged 5.x release.
+
+### Swift 3.2
+There are no API breaking changes when migrating from Swift 3.1 to Swift 3.2 using IBAnimatable.
+
+If you are using Xcode 9 and Swift 3.2, please use the 4.2 release.
+
 ### Swift 3 or 3.1
 If you migrate from Swift 2.x, please check out [IBAnimatable 3.0 Migration Guide](Documentation/IBAnimatable 3.0 Migration Guide.md) for more information about how to migrate your project to 3.0. Version 3 follows Swift 3 [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/) and contains a lot of breaking changes from version 2.x. 
 
 If you are using Xcode 8 with Swift 3, please use the latest tagged 4.x release.
-
-### Swift 2.2 or 2.3?
-If you are using Xcode 7.3.1 with Swift 2.2 please use IBAnimatable 2.7. If you are using Xcode 8 with Swift 2.3, please use the latest tagged 2.x release (version 2.8.1). If you find any issue and create a PR for Swift 2.3, please PR to `swift2` branch. When you use Swift 2.3 with IBAnimatable, you may see some issue like `dlopen(IBAnimatable.framework, 1): Symbol not found: __TMVs20_DisabledRangeIndex_`. That's a bug of Xcode 8, please have a look at [Issue - Failed to render and update auto layout status](https://github.com/IBAnimatable/IBAnimatable/issues/349)
-
-**Version 2.8.1 is the last version to support Swift 2.3. Because Xcode 8.3 has stopped supporting Swift 2.3. We also stopped supporting Swift 2.*, please migrate to Swift 3.**
 
 ## Languages
 [中文](Documentation/README.zh.md)
@@ -169,7 +176,7 @@ Copy and paste `IBAnimatable` folder in your Xcode project.
 
 ### [Swift package manager](https://swift.org/package-manager)
 
-Add `.Package(url: "https://github.com/IBanimatable/IBanimatable.git", majorVersion: 4)` to your `Package.swift`
+Add `.Package(url: "https://github.com/IBanimatable/IBanimatable.git", majorVersion: 5)` to your `Package.swift`
 
 ### [CocoaPods](https://cocoapods.org)
 
