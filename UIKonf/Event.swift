@@ -19,39 +19,39 @@ extension Event {
     static let allEvents = [
         Event(
             id: 0,
-            name: "Bike Tour",
-            description: "UIKonf bike tour has become a tradition. The tour of 2016 will continue that tradition.",
-            image: #imageLiteral(resourceName: "bike-tour")
+            name: "Benin",
+            description: "Bonum integritas corporis: misera debilitas. Istic sum, inquit.",
+            image: #imageLiteral(resourceName: "benin")
         ),
         Event(
             id: 1,
-            name: "A Boat Tour on the Spree",
-            description: "Relax, enjoy Berlin from a boat and chat with other UIKonf participants.",
-            image: #imageLiteral(resourceName: "boat-tour")
+            name: "Erdhoehle",
+            description: "Sed fortuna fortis; Quo modo autem philosophus loquitur? Laboro autem non sine.",
+            image: #imageLiteral(resourceName: "erdhoehle")
         ),
         Event(
             id: 2,
-            name: "Brewery Tour",
-            description: "Follow a German tradition and learn how to brew beer at the Brewery Tour.",
-            image: #imageLiteral(resourceName: "brewery-tour")
+            name: "Lichtstern",
+            description: "De illis, cum volemus. Quodsi ipsam honestatem undique pertectam atque absolutam.",
+            image: #imageLiteral(resourceName: "lichtstern")
         ),
         Event(
             id: 3,
-            name: "WWII Bomb-Shelter Tour",
-            description: "A guided tour of a WWII bomb shelter",
-            image: #imageLiteral(resourceName: "shelter-tour")
+            name: "Ruca",
+            description: "Nulla erit controversia. Non est igitur voluptas bonum Sed mehercule pergrata mihi.",
+            image: #imageLiteral(resourceName: "ruca")
         ),
         Event(
             id: 4,
-            name: "Stasi Museum Tour",
-            description: "Visit the former GDR state security head office which has been conserved in time.",
-            image: #imageLiteral(resourceName: "stasi-tour")
+            name: "Wasserhütte",
+            description: "Quantum Aristoxeni ingenium consumptum videmus in musicis? At coluit ipse amicitias.",
+            image: #imageLiteral(resourceName: "wasserhuette")
         ),
         Event(
             id: 5,
-            name: "Tempelhof Airport Tour",
-            description: "Ever wondered how Tempelhof airport looks from the inside? Then join this tour.",
-            image: #imageLiteral(resourceName: "airport-tour")
-        ),
+            name: "Wiesenbett",
+            description: "Falli igitur possumus. Neutrum vero, inquit ille. Quis istud possit, inquit, negare.",
+            image: #imageLiteral(resourceName: "wiesenbett")
+        )
     ]
 }
