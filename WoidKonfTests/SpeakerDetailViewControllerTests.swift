@@ -35,7 +35,7 @@ final class SpeakerDetailViewControllerTests: FBSnapshotTestCase {
     }
 }
 
-// MARK: Test Helpers
+// MARK: Test Helper
 
 fileprivate extension String {
     static func make(numberOfWords: Int = 5) -> String {
