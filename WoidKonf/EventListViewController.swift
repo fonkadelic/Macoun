@@ -16,6 +16,7 @@ final class EventListViewController: TableViewController<Event, BasicTableViewCe
 
         items = Event.allEvents
         configureCell = { cell, event in
+            cell.accessoryType = .disclosureIndicator
             cell.configure(withTitle: event.name, detail: event.description, image: event.image)
         }
         willDisplayCell = { cell in
