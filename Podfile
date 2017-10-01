@@ -9,6 +9,6 @@ target 'WoidKonf' do
 
   target 'WoidKonfTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'FBSnapshotTestCase', :git => 'https://github.com/facebook/ios-snapshot-test-case'
   end
 end

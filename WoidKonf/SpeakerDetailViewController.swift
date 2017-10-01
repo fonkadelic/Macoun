@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpeakerDetailViewController: UIViewController {
+final class SpeakerDetailViewController: UIViewController {
 
     var speaker: Speaker!
     @IBOutlet var headerView: HeaderView!

@@ -1,4 +1,9 @@
 PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
   - IBAnimatable (5.0.0)
   - Reusable (4.0.0):
     - Reusable/Storyboard (= 4.0.0)
@@ -8,15 +13,26 @@ PODS:
   - SwiftGen (5.1.2)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase (from `https://github.com/facebook/ios-snapshot-test-case`)
   - IBAnimatable (~> 5.0)
   - Reusable (~> 4.0)
   - SwiftGen (~> 5.1)
 
+EXTERNAL SOURCES:
+  FBSnapshotTestCase:
+    :git: https://github.com/facebook/ios-snapshot-test-case
+
+CHECKOUT OPTIONS:
+  FBSnapshotTestCase:
+    :commit: ed4e6a6e81bfb69a5223156e6c3d389a416cf6e3
+    :git: https://github.com/facebook/ios-snapshot-test-case
+
 SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   IBAnimatable: aa2286a9cf8fb4ae2e1be85c5287ae56143b024f
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   SwiftGen: dd2892e7fb008151f30e6ce0cf465b8b8d89e80e
 
-PODFILE CHECKSUM: 93e9fc6f64278bccc7096168d634c289598ea226
+PODFILE CHECKSUM: 2d626128421c406beeef9d45b90dd06b20e292c1
 
 COCOAPODS: 1.3.1

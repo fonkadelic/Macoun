@@ -11,6 +11,7 @@
 		52A49C011CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
 		5A36A0401F7FA8FA00B8CD46 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36A03F1F7FA8F600B8CD46 /* Storyboards.swift */; };
 		5A36A0411F7FA94A00B8CD46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */; };
+		5A4613881F81257E00846BFF /* SpeakerDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */; };
 		5A54481B1CE503F90008B531 /* KWEBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A54481A1CE503F90008B531 /* KWEBehaviour.m */; };
 		5A54481F1CE504610008B531 /* KWETextValidationBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A54481E1CE504610008B531 /* KWETextValidationBehaviour.m */; };
 		5A6117BD1CE0EC8400A52AAA /* UIKonf.clr in Resources */ = {isa = PBXBuildFile; fileRef = 5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */; };
@@ -52,6 +53,7 @@
 		52A49BFF1CE1AD540002B2C4 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5A36A03F1F7FA8F600B8CD46 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		5A5448191CE503F90008B531 /* KWEBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWEBehaviour.h; sourceTree = "<group>"; };
 		5A54481A1CE503F90008B531 /* KWEBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEBehaviour.m; sourceTree = "<group>"; };
 		5A54481C1CE5042F0008B531 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				5AB72A2D1CDF5AD400C78B4E /* Info.plist */,
+				5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */,
 			);
 			path = WoidKonfTests;
 			sourceTree = "<group>";
@@ -398,9 +401,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WoidKonfTests/Pods-WoidKonfTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -474,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52A49C011CE1AD540002B2C4 /* ImageView.swift in Sources */,
+				5A4613881F81257E00846BFF /* SpeakerDetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

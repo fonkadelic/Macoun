@@ -64,6 +64,10 @@ enum StoryboardScene {
 
     static let eventListViewController = SceneType<WoidKonf.EventListViewController>(storyboard: Main.self, identifier: "EventListViewController")
 
+    static let eventRegistrationViewController = SceneType<WoidKonf.EventRegistrationViewController>(storyboard: Main.self, identifier: "EventRegistrationViewController")
+
+    static let speakerDetailViewController = SceneType<WoidKonf.SpeakerDetailViewController>(storyboard: Main.self, identifier: "SpeakerDetailViewController")
+
     static let speakerListViewController = SceneType<WoidKonf.SpeakerListViewController>(storyboard: Main.self, identifier: "SpeakerListViewController")
   }
 }

@@ -205,7 +205,7 @@
         <!--Speaker Detail-->
         <scene sceneID="LhM-uD-cYI">
             <objects>
-                <viewController title="Speaker Detail" id="fPv-Cc-fN6" customClass="SpeakerDetailViewController" customModule="WoidKonf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpeakerDetailViewController" title="Speaker Detail" id="fPv-Cc-fN6" customClass="SpeakerDetailViewController" customModule="WoidKonf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cRg-gN-a2o"/>
                         <viewControllerLayoutGuide type="bottom" id="dNE-9v-f1f"/>
@@ -251,7 +251,7 @@
         <!--EventRegistration-->
         <scene sceneID="GYY-bN-jbP">
             <objects>
-                <viewController title="Event Registration" automaticallyAdjustsScrollViewInsets="NO" id="g6C-DB-YoL" userLabel="EventRegistration" customClass="EventRegistrationViewController" customModule="WoidKonf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventRegistrationViewController" title="Event Registration" automaticallyAdjustsScrollViewInsets="NO" id="g6C-DB-YoL" userLabel="EventRegistration" customClass="EventRegistrationViewController" customModule="WoidKonf" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f0K-4x-9ZT"/>
                         <viewControllerLayoutGuide type="bottom" id="91t-iL-5EZ"/>
