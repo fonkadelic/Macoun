@@ -23,7 +23,7 @@ public extension NibLoadable where Self: UIView {
             let secondItem = (placeholderConstraint.secondItem === self) ? view : placeholderConstraint.secondItem
             
             let constraint = NSLayoutConstraint(
-                item: firstItem,
+                item: firstItem as Any,
                 attribute: placeholderConstraint.firstAttribute,
                 relatedBy: placeholderConstraint.relation,
                 toItem: secondItem,
