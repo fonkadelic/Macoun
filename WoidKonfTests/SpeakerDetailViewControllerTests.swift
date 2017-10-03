@@ -45,7 +45,7 @@ fileprivate extension String {
 
         return wordList
             .prefix(numberOfWords)
-            .reduce("") { $0 + " " + String($1) }
+            .joined(separator: " ")
     }
 }
 
