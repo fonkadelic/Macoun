@@ -1,14 +1,14 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 
-target 'UIKonf' do
+target 'WoidKonf' do
   use_frameworks!
 
   pod 'SwiftGen', '~> 5.1' 
   pod 'Reusable', '~> 4.0'
-  pod 'IBAnimatable', '~> 4.2'
+  pod 'IBAnimatable', '~> 5.0'
 
-  target 'UIKonfTests' do
+  target 'WoidKonfTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'FBSnapshotTestCase', :git => 'https://github.com/facebook/ios-snapshot-test-case'
   end
 end
