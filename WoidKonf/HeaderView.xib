@@ -15,10 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="238" height="264"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
-                    <rect key="frame" x="11" y="8" width="222" height="186.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
+                    <rect key="frame" x="8" y="8" width="222" height="186.5"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3" customClass="AnimatableImageView" customModule="IBAnimatable">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WoidKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3" customClass="AnimatableImageView" customModule="IBAnimatable">
                             <rect key="frame" x="36" y="0.0" width="150" height="150"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Xke-2Z-9Oz"/>
@@ -61,6 +61,6 @@
         </view>
     </objects>
     <resources>
-        <image name="UIKonf-Logo" width="142" height="142"/>
+        <image name="WoidKonf-Logo" width="600" height="600"/>
     </resources>
 </document>

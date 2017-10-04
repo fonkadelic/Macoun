@@ -19,11 +19,11 @@ public extension NibLoadable where Self: UIView {
         view.alpha = alpha
         
         for placeholderConstraint in constraints {
-            let firstItem = (placeholderConstraint.firstItem === self) ? view : placeholderConstraint.firstItem
-            let secondItem = (placeholderConstraint.secondItem === self) ? view : placeholderConstraint.secondItem
+            guard let firstItem: Any = (placeholderConstraint.firstItem === self) ? view : placeholderConstraint.firstItem else { continue }
+            let secondItem: Any? = (placeholderConstraint.secondItem === self) ? view : placeholderConstraint.secondItem
             
             let constraint = NSLayoutConstraint(
-                item: firstItem as Any,
+                item: firstItem,
                 attribute: placeholderConstraint.firstAttribute,
                 relatedBy: placeholderConstraint.relation,
                 toItem: secondItem,
@@ -43,7 +43,7 @@ public extension NibLoadable where Self: UIView {
     }
 }
 
-class HeaderView: UIView, NibLoadable {
+final class HeaderView: UIView, NibLoadable {
     
     @IBOutlet var pictureView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
