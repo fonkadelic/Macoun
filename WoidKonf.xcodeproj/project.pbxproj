@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52A49C001CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
 		52A49C011CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
+		5A124DEC1F84B53500517045 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A124DEB1F84B53500517045 /* Colors.xcassets */; };
 		5A36A0401F7FA8FA00B8CD46 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36A03F1F7FA8F600B8CD46 /* Storyboards.swift */; };
 		5A36A0411F7FA94A00B8CD46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */; };
 		5A4613881F81257E00846BFF /* SpeakerDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */; };
@@ -23,7 +24,7 @@
 		5A9943AC1CE88A3B003C3879 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */; };
 		5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */; };
 		5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1A1CDF5AD400C78B4E /* Main.storyboard */; };
-		5AB72A1E1CDF5AD400C78B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */; };
+		5AB72A1E1CDF5AD400C78B4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1D1CDF5AD400C78B4E /* Images.xcassets */; };
 		5AB72A211CDF5AD400C78B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1F1CDF5AD400C78B4E /* LaunchScreen.storyboard */; };
 		5AB72A451CDF5B1100C78B4E /* SpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72A441CDF5B1100C78B4E /* SpeakerListViewController.swift */; };
 		5ABB02D61CDF602200249A7A /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB02D51CDF602200249A7A /* EventListViewController.swift */; };
@@ -51,6 +52,7 @@
 		3D6314481F44C1DE3087E57A /* Pods-WoidKonf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoidKonf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoidKonf/Pods-WoidKonf.debug.xcconfig"; sourceTree = "<group>"; };
 		460A81277F09059402CE62FC /* Pods-WoidKonfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoidKonfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoidKonfTests/Pods-WoidKonfTests.debug.xcconfig"; sourceTree = "<group>"; };
 		52A49BFF1CE1AD540002B2C4 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		5A124DEB1F84B53500517045 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5A36A03F1F7FA8F600B8CD46 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailViewControllerTests.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		5AB72A131CDF5AD400C78B4E /* WoidKonf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoidKonf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB72A1B1CDF5AD400C78B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AB72A1D1CDF5AD400C78B4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5AB72A201CDF5AD400C78B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AB72A221CDF5AD400C78B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AB72A271CDF5AD400C78B4E /* WoidKonfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoidKonfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +185,8 @@
 				5A5448171CE4E31D0008B531 /* Behaviours */,
 				5A034DBB1F6EB5D900C83959 /* Constants */,
 				5A5448211CE5065A0008B531 /* Supporting Files */,
-				5AB72A1D1CDF5AD400C78B4E /* Assets.xcassets */,
+				5AB72A1D1CDF5AD400C78B4E /* Images.xcassets */,
+				5A124DEB1F84B53500517045 /* Colors.xcassets */,
 				5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */,
 				5AB72A441CDF5B1100C78B4E /* SpeakerListViewController.swift */,
 				5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */,
@@ -315,8 +318,9 @@
 				5AB72A211CDF5AD400C78B4E /* LaunchScreen.storyboard in Resources */,
 				5A6117BD1CE0EC8400A52AAA /* UIKonf.clr in Resources */,
 				5A6117C11CE0ED7B00A52AAA /* HeaderView.xib in Resources */,
-				5AB72A1E1CDF5AD400C78B4E /* Assets.xcassets in Resources */,
+				5AB72A1E1CDF5AD400C78B4E /* Images.xcassets in Resources */,
 				5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */,
+				5A124DEC1F84B53500517045 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
