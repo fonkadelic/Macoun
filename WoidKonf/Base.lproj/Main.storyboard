@@ -65,7 +65,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XIm-PH-Lr4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicTableViewCell" id="XIm-PH-Lr4" customClass="BasicTableViewCell" customModule="WoidKonf" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIm-PH-Lr4" id="CiP-uS-89C">
@@ -113,6 +113,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="GU1-DZ-JcH" secondAttribute="trailing" id="tyC-uY-RI0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="eVl-LX-cRe" id="Za7-KE-QQ5"/>
+                                    <outlet property="pictureView" destination="JQB-zc-Ux9" id="teJ-HV-nTH"/>
+                                    <outlet property="titleLabel" destination="VZe-37-yus" id="er9-MF-NIa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -138,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Keh-c7-Maz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicTableViewCell" id="Keh-c7-Maz" customClass="BasicTableViewCell" customModule="WoidKonf" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Keh-c7-Maz" id="bdC-o7-0IV">
@@ -186,6 +191,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="Xvo-CR-OKc" secondAttribute="bottom" id="bgY-4C-RdZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="wVX-Vi-sYJ" id="mbr-yD-Jkv"/>
+                                    <outlet property="pictureView" destination="BeJ-Qm-rco" id="cSw-bT-zQQ"/>
+                                    <outlet property="titleLabel" destination="oAM-7d-vGJ" id="61e-zn-8NL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
