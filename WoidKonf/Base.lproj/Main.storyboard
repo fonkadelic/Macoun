@@ -75,7 +75,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-DZ-JcH">
                                             <rect key="frame" x="8" y="8" width="359" height="84"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQB-zc-Ux9" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQB-zc-Ux9">
                                                     <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="JQB-zc-Ux9" secondAttribute="height" multiplier="1:1" id="kgz-wH-fw8"/>
@@ -148,7 +148,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xvo-CR-OKc">
                                             <rect key="frame" x="8" y="8" width="359" height="84"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-Qm-rco" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-Qm-rco">
                                                     <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="BeJ-Qm-rco" secondAttribute="height" multiplier="1:1" id="vH4-Bq-zFm"/>

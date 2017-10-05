@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import IBAnimatable
 import Reusable
 
 final class EventListViewController: TableViewController<Event, BasicTableViewCell> {
@@ -20,7 +19,7 @@ final class EventListViewController: TableViewController<Event, BasicTableViewCe
             cell.configure(withTitle: event.name, detail: event.description, image: event.image)
         }
         willDisplayCell = { cell in
-            cell.animate(.none)
+            
         }
         didSelect = { [unowned self] event in
             self.perform(segue: StoryboardSegue.Main.showEventRegistration, prepare: { segue in

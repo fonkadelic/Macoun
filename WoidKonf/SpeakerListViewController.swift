@@ -7,7 +7,6 @@
 
 import UIKit
 import Reusable
-import IBAnimatable
 
 final class SpeakerListViewController: TableViewController<Speaker, BasicTableViewCell> {
     required init?(coder aDecoder: NSCoder) {
@@ -19,7 +18,7 @@ final class SpeakerListViewController: TableViewController<Speaker, BasicTableVi
             cell.configure(withTitle: speaker.name, detail: speaker.shortBio, image: speaker.image)
         }
         willDisplayCell = { cell in
-            cell.animate(.none)
+
         }
         didSelect = { [unowned self] speaker in
             self.perform(segue: StoryboardSegue.Main.showSpeakerDetail, prepare: { segue in

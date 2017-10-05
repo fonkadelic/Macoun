@@ -6,10 +6,9 @@
 //
 
 import UIKit
-import IBAnimatable
 import Reusable
 
-class BasicTableViewCell: AnimatableTableViewCell, NibReusable {
+class BasicTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
