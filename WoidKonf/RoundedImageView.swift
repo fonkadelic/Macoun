@@ -8,10 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class RoundedImageView: UIImageView {
-    @IBInspectable var cornerRadius: CGFloat {
-        get { return layer.cornerRadius }
-        set { layer.cornerRadius = newValue }
-    }
+
 }
