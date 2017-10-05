@@ -18,7 +18,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-VE-kxi">
                     <rect key="frame" x="8" y="8" width="222" height="186.5"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WoidKonf-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="erdhoehle" translatesAutoresizingMaskIntoConstraints="NO" id="glg-kO-8U3" customClass="RoundedImageView" customModule="WoidKonf" customModuleProvider="target">
                             <rect key="frame" x="36" y="0.0" width="150" height="150"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Xke-2Z-9Oz"/>
@@ -52,6 +52,6 @@
         </view>
     </objects>
     <resources>
-        <image name="WoidKonf-Logo" width="600" height="600"/>
+        <image name="erdhoehle" width="940" height="528"/>
     </resources>
 </document>

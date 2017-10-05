@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		529D372E1F8646DC0097DCFD /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D372D1F8646DC0097DCFD /* RoundedImageView.swift */; };
 		52A49C001CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
 		52A49C011CE1AD540002B2C4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A49BFF1CE1AD540002B2C4 /* ImageView.swift */; };
 		5A124DEC1F84B53500517045 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A124DEB1F84B53500517045 /* Colors.xcassets */; };
@@ -51,6 +52,7 @@
 		05795A40442EA7BFF02C1E2E /* Pods_WoidKonfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoidKonfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6314481F44C1DE3087E57A /* Pods-WoidKonf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoidKonf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoidKonf/Pods-WoidKonf.debug.xcconfig"; sourceTree = "<group>"; };
 		460A81277F09059402CE62FC /* Pods-WoidKonfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoidKonfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoidKonfTests/Pods-WoidKonfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		529D372D1F8646DC0097DCFD /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		52A49BFF1CE1AD540002B2C4 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		5A124DEB1F84B53500517045 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				5ABB02E01CDF825D00249A7A /* BasicTableViewCell.xib */,
 				5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */,
 				5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */,
+				529D372D1F8646DC0097DCFD /* RoundedImageView.swift */,
 				5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */,
 				5AB72A1F1CDF5AD400C78B4E /* LaunchScreen.storyboard */,
 				5ABB02D71CDF607000249A7A /* Event.swift */,
@@ -465,6 +468,7 @@
 				5ABB02D61CDF602200249A7A /* EventListViewController.swift in Sources */,
 				5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */,
 				5A9943A41CE61871003C3879 /* KWEFormBehaviour.m in Sources */,
+				529D372E1F8646DC0097DCFD /* RoundedImageView.swift in Sources */,
 				5A9943A71CE67A25003C3879 /* KWEKeyboardBehaviour.m in Sources */,
 				5A36A0401F7FA8FA00B8CD46 /* Storyboards.swift in Sources */,
 				5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */,
