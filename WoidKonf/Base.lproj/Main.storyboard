@@ -371,29 +371,6 @@
                         <constraint firstItem="Gvh-V2-Dex" firstAttribute="top" secondItem="euL-L1-Lbz" secondAttribute="bottom" constant="16" id="fod-PE-4su"/>
                     </constraints>
                 </view>
-                <customObject id="WJE-he-Vwr" customClass="KWETextValidationBehaviour">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="invalidTextColor">
-                            <color key="value" red="0.84485191106796265" green="0.18260636925697327" blue="0.19105884432792664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="owner" destination="g6C-DB-YoL" id="E6A-aA-bwE"/>
-                        <outlet property="textField" destination="8Wm-lh-fNh" id="leB-sM-PhX"/>
-                        <outletCollection property="rules" destination="mVZ-kf-Hrq" id="Z8r-nY-O13"/>
-                        <outletCollection property="controls" destination="jlK-Qt-OKS" id="kqX-st-V6o"/>
-                    </connections>
-                </customObject>
-                <customObject id="mVZ-kf-Hrq" customClass="KWELengthRule">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="minCharacterCount">
-                            <integer key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="maxCharacterCount">
-                            <integer key="value" value="200"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="2598" y="957"/>
         </scene>

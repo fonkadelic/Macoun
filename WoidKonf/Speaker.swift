@@ -5,7 +5,7 @@
 //  Copyright © 2016 Raised by Wolves. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct Speaker {
     let id: Int

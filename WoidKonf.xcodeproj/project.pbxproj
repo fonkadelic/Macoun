@@ -14,14 +14,11 @@
 		5A36A0401F7FA8FA00B8CD46 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36A03F1F7FA8F600B8CD46 /* Storyboards.swift */; };
 		5A36A0411F7FA94A00B8CD46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */; };
 		5A4613881F81257E00846BFF /* SpeakerDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */; };
-		5A54481B1CE503F90008B531 /* KWEBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A54481A1CE503F90008B531 /* KWEBehaviour.m */; };
-		5A54481F1CE504610008B531 /* KWETextValidationBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A54481E1CE504610008B531 /* KWETextValidationBehaviour.m */; };
 		5A6117BD1CE0EC8400A52AAA /* UIKonf.clr in Resources */ = {isa = PBXBuildFile; fileRef = 5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */; };
 		5A6117BF1CE0ED5E00A52AAA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */; };
 		5A6117C11CE0ED7B00A52AAA /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */; };
-		5A9943A41CE61871003C3879 /* KWEFormBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943A31CE61871003C3879 /* KWEFormBehaviour.m */; };
-		5A9943A71CE67A25003C3879 /* KWEKeyboardBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943A61CE67A25003C3879 /* KWEKeyboardBehaviour.m */; };
-		5A9943AA1CE67A5E003C3879 /* KWEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943A91CE67A5E003C3879 /* KWEAdditions.m */; };
+		5A8519D21F87800800C2EEC5 /* Behaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8519D11F87800800C2EEC5 /* Behaviour.swift */; };
+		5A8519D41F8782A300C2EEC5 /* TextValidationBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8519D31F8782A300C2EEC5 /* TextValidationBehaviour.swift */; };
 		5A9943AC1CE88A3B003C3879 /* SpeakerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */; };
 		5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */; };
 		5AB72A1C1CDF5AD400C78B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72A1A1CDF5AD400C78B4E /* Main.storyboard */; };
@@ -58,21 +55,11 @@
 		5A15FBCC1F7F9B9B0040AF08 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5A36A03F1F7FA8F600B8CD46 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		5A4613871F81257E00846BFF /* SpeakerDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailViewControllerTests.swift; sourceTree = "<group>"; };
-		5A5448191CE503F90008B531 /* KWEBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWEBehaviour.h; sourceTree = "<group>"; };
-		5A54481A1CE503F90008B531 /* KWEBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEBehaviour.m; sourceTree = "<group>"; };
-		5A54481C1CE5042F0008B531 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		5A54481D1CE504610008B531 /* KWETextValidationBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWETextValidationBehaviour.h; sourceTree = "<group>"; };
-		5A54481E1CE504610008B531 /* KWETextValidationBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWETextValidationBehaviour.m; sourceTree = "<group>"; };
-		5A5448201CE505BD0008B531 /* KWEBehaviours.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWEBehaviours.h; sourceTree = "<group>"; };
 		5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = UIKonf.clr; sourceTree = "<group>"; };
 		5A6117BE1CE0ED5E00A52AAA /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5A6117C01CE0ED7B00A52AAA /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
-		5A9943A21CE61871003C3879 /* KWEFormBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWEFormBehaviour.h; sourceTree = "<group>"; };
-		5A9943A31CE61871003C3879 /* KWEFormBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEFormBehaviour.m; sourceTree = "<group>"; };
-		5A9943A51CE67A25003C3879 /* KWEKeyboardBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWEKeyboardBehaviour.h; sourceTree = "<group>"; };
-		5A9943A61CE67A25003C3879 /* KWEKeyboardBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEKeyboardBehaviour.m; sourceTree = "<group>"; };
-		5A9943A81CE67A5E003C3879 /* KWEAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWEAdditions.h; sourceTree = "<group>"; };
-		5A9943A91CE67A5E003C3879 /* KWEAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWEAdditions.m; sourceTree = "<group>"; };
+		5A8519D11F87800800C2EEC5 /* Behaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behaviour.swift; sourceTree = "<group>"; };
+		5A8519D31F8782A300C2EEC5 /* TextValidationBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidationBehaviour.swift; sourceTree = "<group>"; };
 		5A9943AB1CE88A3B003C3879 /* SpeakerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetailViewController.swift; sourceTree = "<group>"; };
 		5AB72A131CDF5AD400C78B4E /* WoidKonf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoidKonf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB72A161CDF5AD400C78B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,17 +123,8 @@
 		5A5448171CE4E31D0008B531 /* Behaviours */ = {
 			isa = PBXGroup;
 			children = (
-				5A5448201CE505BD0008B531 /* KWEBehaviours.h */,
-				5A5448191CE503F90008B531 /* KWEBehaviour.h */,
-				5A54481A1CE503F90008B531 /* KWEBehaviour.m */,
-				5A54481D1CE504610008B531 /* KWETextValidationBehaviour.h */,
-				5A54481E1CE504610008B531 /* KWETextValidationBehaviour.m */,
-				5A9943A51CE67A25003C3879 /* KWEKeyboardBehaviour.h */,
-				5A9943A61CE67A25003C3879 /* KWEKeyboardBehaviour.m */,
-				5A9943A21CE61871003C3879 /* KWEFormBehaviour.h */,
-				5A9943A31CE61871003C3879 /* KWEFormBehaviour.m */,
-				5A9943A81CE67A5E003C3879 /* KWEAdditions.h */,
-				5A9943A91CE67A5E003C3879 /* KWEAdditions.m */,
+				5A8519D11F87800800C2EEC5 /* Behaviour.swift */,
+				5A8519D31F8782A300C2EEC5 /* TextValidationBehaviour.swift */,
 			);
 			path = Behaviours;
 			sourceTree = "<group>";
@@ -154,7 +132,6 @@
 		5A5448211CE5065A0008B531 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A54481C1CE5042F0008B531 /* Bridging-Header.h */,
 				5AB72A221CDF5AD400C78B4E /* Info.plist */,
 				5A6117BC1CE0EC8400A52AAA /* UIKonf.clr */,
 			);
@@ -460,24 +437,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A54481B1CE503F90008B531 /* KWEBehaviour.m in Sources */,
-				5A9943AA1CE67A5E003C3879 /* KWEAdditions.m in Sources */,
 				5A36A0411F7FA94A00B8CD46 /* TableViewController.swift in Sources */,
 				5AB72A451CDF5B1100C78B4E /* SpeakerListViewController.swift in Sources */,
 				5A6117BF1CE0ED5E00A52AAA /* HeaderView.swift in Sources */,
 				5ABB02D61CDF602200249A7A /* EventListViewController.swift in Sources */,
 				5ABB02E11CDF825D00249A7A /* BasicTableViewCell.swift in Sources */,
-				5A9943A41CE61871003C3879 /* KWEFormBehaviour.m in Sources */,
 				529D372E1F8646DC0097DCFD /* RoundedImageView.swift in Sources */,
-				5A9943A71CE67A25003C3879 /* KWEKeyboardBehaviour.m in Sources */,
+				5A8519D21F87800800C2EEC5 /* Behaviour.swift in Sources */,
 				5A36A0401F7FA8FA00B8CD46 /* Storyboards.swift in Sources */,
 				5ABB02DA1CDF607900249A7A /* Speaker.swift in Sources */,
 				5AB72A171CDF5AD400C78B4E /* AppDelegate.swift in Sources */,
 				5A9943AC1CE88A3B003C3879 /* SpeakerDetailViewController.swift in Sources */,
 				52A49C001CE1AD540002B2C4 /* ImageView.swift in Sources */,
 				5ABC7FAE1CE0633C001DFDA6 /* EventRegistrationViewController.swift in Sources */,
+				5A8519D41F8782A300C2EEC5 /* TextValidationBehaviour.swift in Sources */,
 				5ABB02D81CDF607000249A7A /* Event.swift in Sources */,
-				5A54481F1CE504610008B531 /* KWETextValidationBehaviour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +607,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = by.raisedbywolves.WoidKonf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WoidKonf/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -650,7 +623,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = by.raisedbywolves.WoidKonf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WoidKonf/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
