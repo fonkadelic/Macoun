@@ -22,11 +22,8 @@ final class SpeakerDetailViewControllerTests: FBSnapshotTestCase {
     }
 
     func testThatItLooksRight() {
-        let imageStub = UIImage.imageFromColor(.darkGray, size: CGSize(width: 512, height: 512))!
-        let speakerStub = Speaker(id: 0, name: "Fixture Name", shortBio: .make(numberOfWords: 10), longBio: .make(numberOfWords: 30), image: imageStub)
-
         let sut = StoryboardScene.Main.speakerDetailViewController.instantiate()
-        sut.speaker = speakerStub
+        sut.speaker = .template
 
         sut.beginAppearanceTransition(true, animated: false)
         sut.endAppearanceTransition()
@@ -36,6 +33,16 @@ final class SpeakerDetailViewControllerTests: FBSnapshotTestCase {
 }
 
 // MARK: Test Helper
+
+fileprivate extension Speaker {
+    static let template = Speaker(
+        id: 0,
+        name: "Fixture Name",
+        shortBio: .make(numberOfWords: 10),
+        longBio: .make(numberOfWords: 30),
+        image: UIImage.imageFromColor(.darkGray, size: CGSize(width: 512, height: 512))!
+    )
+}
 
 fileprivate extension String {
     static func make(numberOfWords: Int = 5) -> String {
